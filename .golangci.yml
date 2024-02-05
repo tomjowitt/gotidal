@@ -1,0 +1,76 @@
+run:
+  timeout: 5m
+  issues-exit-code: 2
+  modules-download-mode: readonly
+  allow-parallel-runners: false
+  show-stats: true
+
+output:
+  format: github-actions
+  print-issued-lines: true
+  print-linter-name: true
+  uniq-by-line: true
+  sort-results: true
+
+linters:
+  disable-all: true
+  enable:
+    - asasalint
+    - asciicheck
+    - bidichk
+    - bodyclose
+    - containedctx
+    - contextcheck
+    - cyclop
+    - decorder
+    - depguard
+    - dogsled
+    - dupl
+    - dupword
+    - durationcheck
+    - errcheck
+    - errchkjson
+    - errname
+    - errorlint
+    - execinquery
+    - exhaustive
+    - exportloopref
+    - forbidigo
+    - forcetypeassert
+    - funlen
+    - gci
+    - gocheckcompilerdirectives
+    - gochecknoglobals
+    - gochecknoinits
+    - gochecksumtype
+    - goconst
+    - gocritic
+    - godot
+    - godox
+    - goerr113
+    - gofmt
+    - gofumpt
+    - goimports
+    - gomnd
+    - goprintffuncname
+    - gosec
+    - gosmopolitan
+    - gosimple
+    - govet
+    - ineffassign
+    - lll
+    - misspell
+    - nakedret
+    - noctx
+    - perfsprint
+    - tparallel
+    - unused
+    - wrapcheck
+
+linters-settings:
+  depguard:
+    rules:
+      main:
+        allow:
+          - $gostd
+          - github.com/tomjowitt/gotidal
