@@ -3,7 +3,6 @@ run:
   issues-exit-code: 2
   modules-download-mode: readonly
   allow-parallel-runners: false
-  show-stats: true
 
 output:
   format: github-actions
@@ -58,14 +57,28 @@ linters:
     - gosimple
     - govet
     - ineffassign
+    - interfacebloat
     - lll
     - misspell
     - nakedret
+    - nilerr
     - noctx
+    - paralleltest
     - perfsprint
+    - predeclared
+    - revive
+    - rowserrcheck
+    - sqlclosecheck
+    - tenv
+    - thelper
     - tparallel
+    - unconvert
+    - unparam
     - unused
+    - varnamelen
+    - wastedassign
     - wrapcheck
+    - wsl
 
 linters-settings:
   depguard:
@@ -74,3 +87,9 @@ linters-settings:
         allow:
           - $gostd
           - github.com/tomjowitt/gotidal
+
+  exhaustive:
+    check:
+      - switch
+      - map
+    default-signifies-exhaustive: true
