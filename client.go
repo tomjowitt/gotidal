@@ -62,7 +62,7 @@ func getAccessToken(ctx context.Context, clientID string, clientSecret string) (
 	}
 
 	req.Header.Set("Content-Type", "application/x-www-form-urlencoded")
-	req.Header.Set("Authorization", fmt.Sprintf("Basic %s", basicAuth))
+	req.Header.Set("Authorization", concat("Basic ", basicAuth))
 
 	responseBody, err := processRequest(req)
 	if err != nil {
@@ -109,7 +109,7 @@ func (c *Client) Request(ctx context.Context, method string, path string, params
 	}
 
 	req.Header.Set("Content-Type", c.ContentType)
-	req.Header.Set("Authorization", fmt.Sprintf("Bearer %s", c.Token))
+	req.Header.Set("Authorization", concat("Bearer ", c.Token))
 	req.Header.Set("accept", c.ContentType)
 
 	return processRequest(req)
@@ -157,4 +157,8 @@ func lowercaseFirstLetter(str string) string {
 	lowerFirstChar := unicode.ToLower(firstChar)
 
 	return string(lowerFirstChar) + str[1:]
+}
+
+func concat(strs ...string) string {
+	return strings.Join(strs, "")
 }
