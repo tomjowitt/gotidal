@@ -3,11 +3,13 @@ package gotidal
 import (
 	"context"
 	"encoding/json"
+	"errors"
 	"fmt"
 	"net/http"
 )
 
 const (
+	searchURL                 = "/search"
 	SearchTypeAlbums          = "ALBUMS"
 	SearchTypeArtists         = "ARTISTS"
 	SearchTypeTracks          = "TRACKS"
@@ -40,17 +42,25 @@ type SearchParams struct {
 	CountryCode string `json:"countryCode"`
 
 	// Specify which popularity type to apply for query result: either worldwide or country popularity.
-	// Worldwide popularity is using by default if nothing is specified.
+	// Worldwide popularity is used by default if nothing is specified.
 	// Example: WORLDWIDE, COUNTRY
 	Popularity string `json:"popularity"`
 }
 
+var ErrMissingRequiredParameters = errors.New("both the Query and the CountryCode parameters are required")
+
 type SearchResults struct {
-	Albums []Album
+	Albums  []Album
+	Artists []Artist
+	Tracks  []Track
 }
 
 func (c *Client) Search(ctx context.Context, params SearchParams) (*SearchResults, error) {
-	response, err := c.Request(ctx, http.MethodGet, "/search", params)
+	if params.Query == "" || params.CountryCode == "" {
+		return nil, ErrMissingRequiredParameters
+	}
+
+	response, err := c.request(ctx, http.MethodGet, searchURL, params)
 	if err != nil {
 		return nil, fmt.Errorf("failed to connect to the search endpoint: %w", err)
 	}

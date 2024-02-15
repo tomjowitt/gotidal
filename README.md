@@ -6,6 +6,9 @@
 
 A Go library for interacting with the TIDAL streaming service API.
 
+[![Go Reference](https://pkg.go.dev/badge/badge/.svg)](https://pkg.go.dev/badge/)
+![GitHub License](https://img.shields.io/github/license/tomjowitt/gotidal)
+
 ## Official Documentation
 
 <https://developer.tidal.com/>

@@ -5,7 +5,7 @@ run:
   allow-parallel-runners: false
 
 output:
-  format: github-actions
+  format: colored-line-number,github-actions
   print-issued-lines: true
   print-linter-name: true
   uniq-by-line: true
@@ -93,3 +93,8 @@ linters-settings:
       - switch
       - map
     default-signifies-exhaustive: true
+
+  varnamelen:
+    ignore-names:
+      - err
+      - tt
