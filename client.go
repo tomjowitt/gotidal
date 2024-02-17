@@ -100,7 +100,7 @@ func processRequest(req *http.Request) ([]byte, error) {
 	return responseBody, nil
 }
 
-func (c *Client) Request(ctx context.Context, method string, path string, params any) ([]byte, error) {
+func (c *Client) request(ctx context.Context, method string, path string, params any) ([]byte, error) {
 	uri := fmt.Sprintf("%s%s?%s", c.Environment, path, toURLParams(params))
 
 	req, err := http.NewRequestWithContext(ctx, method, uri, nil)
@@ -148,6 +148,8 @@ func toURLParams(s interface{}) string {
 	return strings.Join(params, "&")
 }
 
+// lowercaseFirstLetter converts the first letter of a string the lowercase to match the camel-casing of the TIDAL
+// API URL parameters.
 func lowercaseFirstLetter(str string) string {
 	if len(str) == 0 {
 		return str
@@ -159,6 +161,7 @@ func lowercaseFirstLetter(str string) string {
 	return string(lowerFirstChar) + str[1:]
 }
 
+// concat joins strings together in a more efficient way than fmt.Sprintf.
 func concat(strs ...string) string {
 	return strings.Join(strs, "")
 }

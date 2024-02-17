@@ -8,6 +8,8 @@ import (
 	"github.com/tomjowitt/gotidal"
 )
 
+const maxSearchResults = 5
+
 func main() {
 	ctx := context.Background()
 
@@ -20,8 +22,10 @@ func main() {
 	}
 
 	params := gotidal.SearchParams{
-		Query:       "Black Flag",
-		CountryCode: "AU",
+		Query:       "Peso Pluma",
+		CountryCode: "MX",
+		Limit:       maxSearchResults,
+		Popularity:  gotidal.SearchPopularityCountry,
 	}
 
 	results, err := client.Search(ctx, params)
@@ -30,6 +34,15 @@ func main() {
 	}
 
 	for _, album := range results.Albums {
-		log.Printf("%s - %s", album.Resource.Title, album.Resource.Artists[0].Name)
+		log.Printf("%s - %s", album.Title(), album.ArtistsToString())
+		log.Printf("%d - %s", album.Duration(), album.ReleaseDate())
+	}
+
+	for _, artist := range results.Artists {
+		log.Printf("%s - %s", artist.Name(), artist.URL())
+	}
+
+	for _, track := range results.Tracks {
+		log.Printf("%s - %s", track.Title(), track.Album().Title())
 	}
 }
