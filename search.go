@@ -53,6 +53,7 @@ type SearchResults struct {
 	Albums  []Album
 	Artists []Artist
 	Tracks  []Track
+	Videos  []Video
 }
 
 func (c *Client) Search(ctx context.Context, params SearchParams) (*SearchResults, error) {

@@ -30,6 +30,7 @@ type Client struct {
 	Token       string
 }
 
+// NewClient returns an API client based on a users credentials.
 func NewClient(clientID string, clientSecret string) (*Client, error) {
 	ctx := context.Background()
 
