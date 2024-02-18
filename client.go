@@ -28,10 +28,11 @@ type Client struct {
 	ContentType string
 	Environment string
 	Token       string
+	CountryCode string
 }
 
-// NewClient returns an API client based on a users credentials.
-func NewClient(clientID string, clientSecret string) (*Client, error) {
+// NewClient returns an API client based on a users credentials and location.
+func NewClient(clientID string, clientSecret string, countryCode string) (*Client, error) {
 	ctx := context.Background()
 
 	token, err := getAccessToken(ctx, clientID, clientSecret)
@@ -43,6 +44,7 @@ func NewClient(clientID string, clientSecret string) (*Client, error) {
 		ContentType: contentType,
 		Environment: environment,
 		Token:       token,
+		CountryCode: countryCode,
 	}, nil
 }
 
@@ -102,7 +104,7 @@ func processRequest(req *http.Request) ([]byte, error) {
 }
 
 func (c *Client) request(ctx context.Context, method string, path string, params any) ([]byte, error) {
-	uri := fmt.Sprintf("%s%s?%s", c.Environment, path, toURLParams(params))
+	uri := fmt.Sprintf("%s%s?%s", c.Environment, path, toURLParams(params, c.CountryCode))
 
 	req, err := http.NewRequestWithContext(ctx, method, uri, nil)
 	if err != nil {
@@ -116,8 +118,9 @@ func (c *Client) request(ctx context.Context, method string, path string, params
 	return processRequest(req)
 }
 
-func toURLParams(s interface{}) string {
+func toURLParams(s interface{}, countryCode string) string {
 	var params []string
+	params = append(params, fmt.Sprintf("%s=%s", "countryCode", countryCode))
 
 	v := reflect.ValueOf(s)
 	t := v.Type()

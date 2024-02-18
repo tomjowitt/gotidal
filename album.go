@@ -1,5 +1,12 @@
 package gotidal
 
+import (
+	"context"
+	"encoding/json"
+	"fmt"
+	"net/http"
+)
+
 // Album represents an individual release.
 type Album struct {
 	albumResource `json:"resource"`
@@ -48,4 +55,36 @@ type trackResource struct {
 	Version string        `json:"version"`
 	Artists []Artist      `json:"artists"`
 	Album   albumResource `json:"album"`
+}
+
+type albumResults struct {
+	Data []Album `json:"data"`
+}
+
+func (c *Client) GetAlbumByBarcodeID(ctx context.Context, barcodeID string) ([]Album, error) {
+	if barcodeID == "" {
+		return nil, ErrMissingRequiredParameters
+	}
+
+	type barcodeParams struct {
+		barcodeId string // nolint:revive // This variable is directly referenced in the query string.
+	}
+
+	params := barcodeParams{
+		barcodeId: barcodeID,
+	}
+
+	response, err := c.request(ctx, http.MethodGet, "/albums/byBarcodeId", params)
+	if err != nil {
+		return nil, fmt.Errorf("failed to connect to the album endpoint: %w", err)
+	}
+
+	var results albumResults
+
+	err = json.Unmarshal(response, &results)
+	if err != nil {
+		return nil, fmt.Errorf("failed to unmarshal the album response body: %w", err)
+	}
+
+	return results.Data, nil
 }

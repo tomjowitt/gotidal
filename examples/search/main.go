@@ -16,18 +16,15 @@ func main() {
 	clientID := os.Getenv("TIDAL_CLIENT_ID")
 	clientSecret := os.Getenv("TIDAL_CLIENT_SECRET")
 
-	client, err := gotidal.NewClient(clientID, clientSecret)
+	client, err := gotidal.NewClient(clientID, clientSecret, "AU")
 	if err != nil {
 		log.Fatal(err)
 	}
 
-	log.Println(client.Token)
-
 	params := gotidal.SearchParams{
-		Query:       "Peso Pluma",
-		CountryCode: "MX",
-		Limit:       maxSearchResults,
-		Popularity:  gotidal.SearchPopularityCountry,
+		Query:      "Peso Pluma",
+		Limit:      maxSearchResults,
+		Popularity: gotidal.SearchPopularityCountry,
 	}
 
 	results, err := client.Search(ctx, params)

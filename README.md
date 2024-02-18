@@ -4,7 +4,7 @@
     <img width="33%" src="assets/gotidal.png">
 </p>
 
-An unofficial Go library for interacting with the TIDAL streaming service API.
+An unofficial Go library for interacting with the TIDAL API.
 
 [![Go Reference](https://pkg.go.dev/badge/badge/.svg)](https://pkg.go.dev/github.com/tomjowitt/gotidal)
 ![GitHub License](https://img.shields.io/github/license/tomjowitt/gotidal)
@@ -52,14 +52,13 @@ func main() {
     clientID := os.Getenv("TIDAL_CLIENT_ID")
     clientSecret := os.Getenv("TIDAL_CLIENT_SECRET")
 
-    client, err := gotidal.NewClient(clientID, clientSecret)
+    client, err := gotidal.NewClient(clientID, clientSecret, "AU")
     if err != nil {
         log.Fatal(err)
     }
 
     params := gotidal.SearchParams{
         Query:       "Peso Pluma",
-        CountryCode: "MX",
         Limit:       maxSearchResults,
         Popularity:  gotidal.SearchPopularityCountry,
     }
@@ -70,7 +69,7 @@ func main() {
     }
 
     for _, album := range results.Albums {
-        log.Printf("%s - %s", album.Title(), album.ArtistsToString())
+        log.Printf("%s - %s", album.Title, album.Artists[0].Name)
     }
 ```
 

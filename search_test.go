@@ -21,14 +21,7 @@ func TestClient_Search(t *testing.T) {
 		{
 			"Missing query",
 			args{
-				params: SearchParams{CountryCode: "AU"},
-			},
-			ErrMissingRequiredParameters,
-		},
-		{
-			"Missing country code",
-			args{
-				params: SearchParams{Query: "Devo"},
+				params: SearchParams{},
 			},
 			ErrMissingRequiredParameters,
 		},
