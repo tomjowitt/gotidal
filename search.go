@@ -37,10 +37,6 @@ type SearchParams struct {
 	// Example: 10
 	Limit int `json:"limit"`
 
-	// ISO 3166-1 alpha-2 country code.
-	// Example: AU
-	CountryCode string `json:"countryCode"`
-
 	// Specify which popularity type to apply for query result: either worldwide or country popularity.
 	// Worldwide popularity is used by default if nothing is specified.
 	// Example: WORLDWIDE, COUNTRY
@@ -57,7 +53,7 @@ type SearchResults struct {
 }
 
 func (c *Client) Search(ctx context.Context, params SearchParams) (*SearchResults, error) {
-	if params.Query == "" || params.CountryCode == "" {
+	if params.Query == "" {
 		return nil, ErrMissingRequiredParameters
 	}
 
