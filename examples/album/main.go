@@ -19,16 +19,29 @@ func main() {
 		log.Fatal(err)
 	}
 
+	log.Println("-------------------------------------------------")
+	log.Println("Albums By Barcode ID")
+	log.Println("-------------------------------------------------")
+
 	results, err := client.GetAlbumByBarcodeID(ctx, "197189111396")
 	if err != nil {
 		log.Fatal(err)
 	}
 
+	for _, album := range results {
+		log.Printf("%s - %s", album.Title, album.Artists[0].Name)
+	}
+
 	log.Println("-------------------------------------------------")
-	log.Println("Albums By Barcode ID")
+	log.Println("Multiple Albums")
 	log.Println("-------------------------------------------------")
 
-	for _, album := range results {
+	multiAlbums, err := client.GetMultipleAlbums(ctx, []string{"301846384", "2579864"})
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	for _, album := range multiAlbums {
 		log.Printf("%s - %s", album.Title, album.Artists[0].Name)
 	}
 }

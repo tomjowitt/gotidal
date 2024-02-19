@@ -5,6 +5,7 @@ import (
 	"encoding/json"
 	"fmt"
 	"net/http"
+	"strings"
 )
 
 // Album represents an individual release.
@@ -61,6 +62,7 @@ type albumResults struct {
 	Data []Album `json:"data"`
 }
 
+// GetAlbumByBarcodeID returns a list of albums that match a barcode ID.
 func (c *Client) GetAlbumByBarcodeID(ctx context.Context, barcodeID string) ([]Album, error) {
 	if barcodeID == "" {
 		return nil, ErrMissingRequiredParameters
@@ -76,14 +78,39 @@ func (c *Client) GetAlbumByBarcodeID(ctx context.Context, barcodeID string) ([]A
 
 	response, err := c.request(ctx, http.MethodGet, "/albums/byBarcodeId", params)
 	if err != nil {
-		return nil, fmt.Errorf("failed to connect to the album endpoint: %w", err)
+		return nil, fmt.Errorf("failed to connect to the albums endpoint: %w", err)
 	}
 
 	var results albumResults
 
 	err = json.Unmarshal(response, &results)
 	if err != nil {
-		return nil, fmt.Errorf("failed to unmarshal the album response body: %w", err)
+		return nil, fmt.Errorf("failed to unmarshal the albums response body: %w", err)
+	}
+
+	return results.Data, nil
+}
+
+// GetMultipleAlbums returns a list of albums filtered by their IDs.
+func (c *Client) GetMultipleAlbums(ctx context.Context, ids []string) ([]Album, error) {
+	type multiAlbumParams struct {
+		ids string
+	}
+
+	params := multiAlbumParams{
+		ids: strings.Join(ids, ","),
+	}
+
+	response, err := c.request(ctx, http.MethodGet, "/albums/byIds", params)
+	if err != nil {
+		return nil, fmt.Errorf("failed to connect to the albums endpoint: %w", err)
+	}
+
+	var results albumResults
+
+	err = json.Unmarshal(response, &results)
+	if err != nil {
+		return nil, fmt.Errorf("failed to unmarshal the albums response body: %w", err)
 	}
 
 	return results.Data, nil
