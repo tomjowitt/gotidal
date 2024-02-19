@@ -103,6 +103,7 @@ func processRequest(req *http.Request) ([]byte, error) {
 	return responseBody, nil
 }
 
+// nolint:unparam
 func (c *Client) request(ctx context.Context, method string, path string, params any) ([]byte, error) {
 	uri := fmt.Sprintf("%s%s?%s", c.Environment, path, toURLParams(params, c.CountryCode))
 
@@ -118,11 +119,15 @@ func (c *Client) request(ctx context.Context, method string, path string, params
 	return processRequest(req)
 }
 
-func toURLParams(s interface{}, countryCode string) string {
+func toURLParams(input interface{}, countryCode string) string {
 	var params []string
 	params = append(params, fmt.Sprintf("%s=%s", "countryCode", countryCode))
 
-	v := reflect.ValueOf(s)
+	if input == nil {
+		return strings.Join(params, "&")
+	}
+
+	v := reflect.ValueOf(input)
 	t := v.Type()
 
 	for i := 0; i < v.NumField(); i++ {
