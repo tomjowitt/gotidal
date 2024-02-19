@@ -20,6 +20,17 @@ func main() {
 	}
 
 	log.Println("-------------------------------------------------")
+	log.Println("Single Album")
+	log.Println("-------------------------------------------------")
+
+	album, err := client.GetSingleAlbum(ctx, "51584178")
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	log.Printf("%s - %s", album.Title, album.Artists[0].Name)
+
+	log.Println("-------------------------------------------------")
 	log.Println("Albums By Barcode ID")
 	log.Println("-------------------------------------------------")
 

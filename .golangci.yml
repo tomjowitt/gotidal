@@ -97,4 +97,5 @@ linters-settings:
   varnamelen:
     ignore-names:
       - err
+      - id
       - tt

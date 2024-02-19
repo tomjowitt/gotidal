@@ -62,6 +62,27 @@ type albumResults struct {
 	Data []Album `json:"data"`
 }
 
+// GetSingleAlbum returns an album that matches an ID.
+func (c *Client) GetSingleAlbum(ctx context.Context, id string) (*Album, error) {
+	if id == "" {
+		return nil, ErrMissingRequiredParameters
+	}
+
+	response, err := c.request(ctx, http.MethodGet, concat("/albums/", id), nil)
+	if err != nil {
+		return nil, fmt.Errorf("failed to connect to the albums endpoint: %w", err)
+	}
+
+	var result Album
+
+	err = json.Unmarshal(response, &result)
+	if err != nil {
+		return nil, fmt.Errorf("failed to unmarshal the albums response body: %w", err)
+	}
+
+	return &result, nil
+}
+
 // GetAlbumByBarcodeID returns a list of albums that match a barcode ID.
 func (c *Client) GetAlbumByBarcodeID(ctx context.Context, barcodeID string) ([]Album, error) {
 	if barcodeID == "" {
