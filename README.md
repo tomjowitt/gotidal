@@ -25,6 +25,10 @@ Developer documentation and API keys:
 Discussion and feature requests:
 <https://github.com/orgs/tidal-music/discussions>
 
+## Roadmap
+
+Please see the issues tab for work left to be completed.
+
 ## Installation
 
 ```bash

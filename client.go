@@ -144,6 +144,7 @@ func toURLParams(s interface{}, countryCode string) string {
 			if paramValue != "" && paramValue != "0" {
 				paramName := url.QueryEscape(lowercaseFirstLetter(field.Name))
 				paramValue = url.QueryEscape(paramValue)
+
 				params = append(params, fmt.Sprintf("%s=%s", paramName, paramValue))
 			}
 		}
