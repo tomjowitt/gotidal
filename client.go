@@ -24,7 +24,12 @@ const (
 
 var ErrUnexpectedResponseCode = errors.New("returned an unexpected status code")
 
+type HTTPClient interface {
+	Do(req *http.Request) (*http.Response, error)
+}
+
 type Client struct {
+	httpClient  HTTPClient
 	ContentType string
 	Environment string
 	Token       string
@@ -35,12 +40,15 @@ type Client struct {
 func NewClient(clientID string, clientSecret string, countryCode string) (*Client, error) {
 	ctx := context.Background()
 
-	token, err := getAccessToken(ctx, clientID, clientSecret)
+	httpClient := &http.Client{}
+
+	token, err := getAccessToken(ctx, httpClient, clientID, clientSecret)
 	if err != nil {
 		return nil, err
 	}
 
 	return &Client{
+		httpClient:  httpClient,
 		ContentType: contentType,
 		Environment: environment,
 		Token:       token,
@@ -54,7 +62,7 @@ type authResponse struct {
 	ExpiresIn   int    `json:"expires_in"`
 }
 
-func getAccessToken(ctx context.Context, clientID string, clientSecret string) (string, error) {
+func getAccessToken(ctx context.Context, httpClient HTTPClient, clientID string, clientSecret string) (string, error) {
 	basicAuth := base64.StdEncoding.EncodeToString([]byte(fmt.Sprintf("%s:%s", clientID, clientSecret)))
 
 	requestBody := []byte(`grant_type=client_credentials`)
@@ -67,7 +75,7 @@ func getAccessToken(ctx context.Context, clientID string, clientSecret string) (
 	req.Header.Set("Content-Type", "application/x-www-form-urlencoded")
 	req.Header.Set("Authorization", concat("Basic ", basicAuth))
 
-	responseBody, err := processRequest(req)
+	responseBody, err := processRequest(httpClient, req)
 	if err != nil {
 		return "", fmt.Errorf("failed to process the request: %w", err)
 	}
@@ -82,10 +90,8 @@ func getAccessToken(ctx context.Context, clientID string, clientSecret string) (
 	return authResponse.AccessToken, nil
 }
 
-func processRequest(req *http.Request) ([]byte, error) {
-	client := http.Client{}
-
-	response, err := client.Do(req)
+func processRequest(httpClient HTTPClient, req *http.Request) ([]byte, error) {
+	response, err := httpClient.Do(req)
 	if err != nil {
 		return nil, fmt.Errorf("failed to process request: %w", err)
 	}
@@ -116,7 +122,7 @@ func (c *Client) request(ctx context.Context, method string, path string, params
 	req.Header.Set("Authorization", concat("Bearer ", c.Token))
 	req.Header.Set("accept", c.ContentType)
 
-	return processRequest(req)
+	return processRequest(c.httpClient, req)
 }
 
 func toURLParams(input interface{}, countryCode string) string {

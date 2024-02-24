@@ -1,0 +1,119 @@
+{
+    "resource": {
+        "id": "51584178",
+        "barcodeId": "825646008339",
+        "title": "Power Corruption and Lies",
+        "artists": [
+            {
+                "id": "11950",
+                "name": "New Order",
+                "picture": [
+                    {
+                        "url": "https://resources.tidal.com/images/34d80a5c/90b5/478b/985d/caa3a72029f5/1024x256.jpg",
+                        "width": 1024,
+                        "height": 256
+                    },
+                    {
+                        "url": "https://resources.tidal.com/images/34d80a5c/90b5/478b/985d/caa3a72029f5/1080x720.jpg",
+                        "width": 1080,
+                        "height": 720
+                    },
+                    {
+                        "url": "https://resources.tidal.com/images/34d80a5c/90b5/478b/985d/caa3a72029f5/160x107.jpg",
+                        "width": 160,
+                        "height": 107
+                    },
+                    {
+                        "url": "https://resources.tidal.com/images/34d80a5c/90b5/478b/985d/caa3a72029f5/160x160.jpg",
+                        "width": 160,
+                        "height": 160
+                    },
+                    {
+                        "url": "https://resources.tidal.com/images/34d80a5c/90b5/478b/985d/caa3a72029f5/320x214.jpg",
+                        "width": 320,
+                        "height": 214
+                    },
+                    {
+                        "url": "https://resources.tidal.com/images/34d80a5c/90b5/478b/985d/caa3a72029f5/320x320.jpg",
+                        "width": 320,
+                        "height": 320
+                    },
+                    {
+                        "url": "https://resources.tidal.com/images/34d80a5c/90b5/478b/985d/caa3a72029f5/480x480.jpg",
+                        "width": 480,
+                        "height": 480
+                    },
+                    {
+                        "url": "https://resources.tidal.com/images/34d80a5c/90b5/478b/985d/caa3a72029f5/640x428.jpg",
+                        "width": 640,
+                        "height": 428
+                    },
+                    {
+                        "url": "https://resources.tidal.com/images/34d80a5c/90b5/478b/985d/caa3a72029f5/750x500.jpg",
+                        "width": 750,
+                        "height": 500
+                    },
+                    {
+                        "url": "https://resources.tidal.com/images/34d80a5c/90b5/478b/985d/caa3a72029f5/750x750.jpg",
+                        "width": 750,
+                        "height": 750
+                    }
+                ],
+                "main": true
+            }
+        ],
+        "duration": 2555,
+        "releaseDate": "1983-01-01",
+        "imageCover": [
+            {
+                "url": "https://resources.tidal.com/images/a4ff8d08/07f2/4a48/88c4/a5648780ee1a/1080x1080.jpg",
+                "width": 1080,
+                "height": 1080
+            },
+            {
+                "url": "https://resources.tidal.com/images/a4ff8d08/07f2/4a48/88c4/a5648780ee1a/1280x1280.jpg",
+                "width": 1280,
+                "height": 1280
+            },
+            {
+                "url": "https://resources.tidal.com/images/a4ff8d08/07f2/4a48/88c4/a5648780ee1a/160x160.jpg",
+                "width": 160,
+                "height": 160
+            },
+            {
+                "url": "https://resources.tidal.com/images/a4ff8d08/07f2/4a48/88c4/a5648780ee1a/320x320.jpg",
+                "width": 320,
+                "height": 320
+            },
+            {
+                "url": "https://resources.tidal.com/images/a4ff8d08/07f2/4a48/88c4/a5648780ee1a/640x640.jpg",
+                "width": 640,
+                "height": 640
+            },
+            {
+                "url": "https://resources.tidal.com/images/a4ff8d08/07f2/4a48/88c4/a5648780ee1a/750x750.jpg",
+                "width": 750,
+                "height": 750
+            },
+            {
+                "url": "https://resources.tidal.com/images/a4ff8d08/07f2/4a48/88c4/a5648780ee1a/80x80.jpg",
+                "width": 80,
+                "height": 80
+            }
+        ],
+        "videoCover": [],
+        "numberOfVolumes": 1,
+        "numberOfTracks": 8,
+        "numberOfVideos": 0,
+        "type": "ALBUM",
+        "copyright": "© 2015 Warner Records 90 Ltd",
+        "mediaMetadata": {
+            "tags": [
+                "LOSSLESS",
+                "MQA"
+            ]
+        },
+        "properties": {},
+        "tidalUrl": "https://tidal.com/browse/album/51584178"
+    }
+}

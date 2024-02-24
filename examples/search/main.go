@@ -8,8 +8,6 @@ import (
 	"github.com/tomjowitt/gotidal"
 )
 
-const maxSearchResults = 5
-
 func main() {
 	ctx := context.Background()
 
@@ -23,7 +21,7 @@ func main() {
 
 	params := gotidal.SearchParams{
 		Query:      "Peso Pluma",
-		Limit:      maxSearchResults,
+		Limit:      5,
 		Popularity: gotidal.SearchPopularityCountry,
 	}
 

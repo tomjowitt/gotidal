@@ -1,0 +1,9 @@
+{
+    "errors": [
+        {
+            "category": "AUTHENTICATION_ERROR",
+            "code": "UNAUTHORIZED",
+            "detail": "Not valid token: expired, please refresh"
+        }
+    ]
+}
