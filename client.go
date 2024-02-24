@@ -24,16 +24,24 @@ const (
 
 var ErrUnexpectedResponseCode = errors.New("returned an unexpected status code")
 
+// HTTPClient provides an interface to make HTTP requests.
 type HTTPClient interface {
 	Do(req *http.Request) (*http.Response, error)
 }
 
+// Client defines the parameters needed to create a TIDAL API client.
 type Client struct {
 	httpClient  HTTPClient
 	ContentType string
 	Environment string
 	Token       string
 	CountryCode string
+}
+
+// PaginationParams defines the limit and offset for pagination functions.
+type PaginationParams struct {
+	Limit  int
+	Offset int
 }
 
 // NewClient returns an API client based on a users credentials and location.

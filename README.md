@@ -11,6 +11,7 @@ An unofficial Go library for interacting with the TIDAL API.
 ![GitHub Tag](https://img.shields.io/github/v/tag/tomjowitt/gotidal)
 ![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/tomjowitt/gotidal/test.yml?label=tests)
 ![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/tomjowitt/gotidal/lint.yml?label=lint)
+![GitHub go.mod Go version](https://img.shields.io/github/go-mod/go-version/tomjowitt/gotidal)
 
 ## Guidelines
 

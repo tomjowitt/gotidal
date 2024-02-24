@@ -96,7 +96,7 @@ linters-settings:
 
   gomnd:
     ignored-files:
-      - "examples/*.go"
+      - examples/album/main.go
 
   varnamelen:
     ignore-names:
@@ -106,7 +106,11 @@ linters-settings:
 
 issues:
   exclude-rules:
-    - path: _test.go
+    - path: (.+)_test\.go
       linters:
         - cyclop
         - funlen
+    - path: examples/(.+)/main.go
+      linters:
+        - funlen
+        - gomnd
