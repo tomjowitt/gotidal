@@ -68,4 +68,22 @@ func main() {
 	for _, item := range items {
 		log.Printf("#%d (Vol #%d) - %s - %s", item.TrackNumber, item.VolumeNumber, item.Title, item.Album.Title)
 	}
+
+	log.Println("-------------------------------------------------")
+	log.Println("Similar Albums to 'New York Dolls - s/t'")
+	log.Println("-------------------------------------------------")
+
+	similarIDs, err := client.GetSimilarAlbums(ctx, "3992356", gotidal.PaginationParams{Limit: 10})
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	similarAlbums, err := client.GetMultipleAlbums(ctx, similarIDs)
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	for _, item := range similarAlbums {
+		log.Printf("%s - %s", item.Title, item.Artists[0].Name)
+	}
 }

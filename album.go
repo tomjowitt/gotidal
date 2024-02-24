@@ -96,17 +96,6 @@ func (c *Client) GetSingleAlbum(ctx context.Context, id string) (*Album, error) 
 	return &result, nil
 }
 
-// itemsParams defines the request parameters used by the album items API endpoint.
-type itemsParams struct {
-	// Pagination offset (in number of items).
-	// Example: 0
-	Offset int `json:"offset"`
-
-	// Page size.
-	// Example: 10
-	Limit int `json:"limit"`
-}
-
 type trackResults struct {
 	Data     []Track      `json:"data"`
 	MetaData ItemMetaData `json:"metadata"`
@@ -120,13 +109,14 @@ const paginationLimit = 100
 // one round-trip. If the metadata reports a higher total then we make susequent API calls until all the tracks are
 // returned.
 //
-// This endpoint also supports videos but it was hard to find any examples of this.
+// This endpoint also supports videos but it was hard to find any examples of this, so for the moment this is tracks
+// only.
 func (c *Client) GetAlbumTracks(ctx context.Context, id string) ([]Track, error) {
 	if id == "" {
 		return nil, ErrMissingRequiredParameters
 	}
 
-	params := itemsParams{
+	params := PaginationParams{
 		Limit:  paginationLimit,
 		Offset: 0,
 	}
@@ -200,15 +190,48 @@ func (c *Client) GetMultipleAlbums(ctx context.Context, ids []string) ([]Album, 
 
 	response, err := c.request(ctx, http.MethodGet, "/albums/byIds", params)
 	if err != nil {
-		return nil, fmt.Errorf("failed to connect to the albums endpoint: %w", err)
+		return nil, fmt.Errorf("failed to connect to the multiple albums endpoint: %w", err)
 	}
 
 	var results albumResults
 
 	err = json.Unmarshal(response, &results)
 	if err != nil {
-		return nil, fmt.Errorf("failed to unmarshal the albums response body: %w", err)
+		return nil, fmt.Errorf("failed to unmarshal the multiple albums response body: %w", err)
 	}
 
 	return results.Data, nil
+}
+
+type similarAlbum struct {
+	Resource struct {
+		ID string `json:"id"`
+	}
+}
+
+type similarAlbumResults struct {
+	Data     []similarAlbum `json:"data"`
+	MetaData ItemMetaData   `json:"metadata"`
+}
+
+// GetSimilarAlbums returns a slice of album IDs that can be used as a parameter in the GetMultipleAlbums function.
+func (c *Client) GetSimilarAlbums(ctx context.Context, id string, params PaginationParams) ([]string, error) {
+	response, err := c.request(ctx, http.MethodGet, concat("/albums/", id, "/similar"), params)
+	if err != nil {
+		return nil, fmt.Errorf("failed to connect to the similar albums endpoint: %w", err)
+	}
+
+	var results similarAlbumResults
+
+	err = json.Unmarshal(response, &results)
+	if err != nil {
+		return nil, fmt.Errorf("failed to unmarshal the similar albums response body: %w", err)
+	}
+
+	var albumIDs []string
+	for _, albumID := range results.Data {
+		albumIDs = append(albumIDs, albumID.Resource.ID)
+	}
+
+	return albumIDs, nil
 }
