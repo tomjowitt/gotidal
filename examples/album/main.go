@@ -55,4 +55,17 @@ func main() {
 	for _, album := range multiAlbums {
 		log.Printf("%s - %s", album.Title, album.Artists[0].Name)
 	}
+
+	log.Println("-------------------------------------------------")
+	log.Println("Album Tracks")
+	log.Println("-------------------------------------------------")
+
+	items, err := client.GetAlbumTracks(ctx, "37267701")
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	for _, item := range items {
+		log.Printf("#%d (Vol #%d) - %s - %s", item.TrackNumber, item.VolumeNumber, item.Title, item.Album.Title)
+	}
 }

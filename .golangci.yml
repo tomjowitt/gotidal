@@ -94,8 +94,19 @@ linters-settings:
       - map
     default-signifies-exhaustive: true
 
+  gomnd:
+    ignored-files:
+      - "examples/*.go"
+
   varnamelen:
     ignore-names:
       - err
       - id
       - tt
+
+issues:
+  exclude-rules:
+    - path: _test.go
+      linters:
+        - cyclop
+        - funlen

@@ -9,6 +9,8 @@ An unofficial Go library for interacting with the TIDAL API.
 [![Go Reference](https://pkg.go.dev/badge/badge/.svg)](https://pkg.go.dev/github.com/tomjowitt/gotidal)
 ![GitHub License](https://img.shields.io/github/license/tomjowitt/gotidal)
 ![GitHub Tag](https://img.shields.io/github/v/tag/tomjowitt/gotidal)
+![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/tomjowitt/gotidal/test.yml?label=tests)
+![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/tomjowitt/gotidal/lint.yml?label=lint)
 
 ## Guidelines
 
