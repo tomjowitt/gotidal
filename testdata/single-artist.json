@@ -1,0 +1,59 @@
+{
+    "resource": {
+        "id": "5907",
+        "name": "Kronos Quartet",
+        "picture": [
+            {
+                "url": "https://resources.tidal.com/images/f158b1a2/23b3/4f26/a09f/2f6ffcfdf275/1024x256.jpg",
+                "width": 1024,
+                "height": 256
+            },
+            {
+                "url": "https://resources.tidal.com/images/f158b1a2/23b3/4f26/a09f/2f6ffcfdf275/1080x720.jpg",
+                "width": 1080,
+                "height": 720
+            },
+            {
+                "url": "https://resources.tidal.com/images/f158b1a2/23b3/4f26/a09f/2f6ffcfdf275/160x107.jpg",
+                "width": 160,
+                "height": 107
+            },
+            {
+                "url": "https://resources.tidal.com/images/f158b1a2/23b3/4f26/a09f/2f6ffcfdf275/160x160.jpg",
+                "width": 160,
+                "height": 160
+            },
+            {
+                "url": "https://resources.tidal.com/images/f158b1a2/23b3/4f26/a09f/2f6ffcfdf275/320x214.jpg",
+                "width": 320,
+                "height": 214
+            },
+            {
+                "url": "https://resources.tidal.com/images/f158b1a2/23b3/4f26/a09f/2f6ffcfdf275/320x320.jpg",
+                "width": 320,
+                "height": 320
+            },
+            {
+                "url": "https://resources.tidal.com/images/f158b1a2/23b3/4f26/a09f/2f6ffcfdf275/480x480.jpg",
+                "width": 480,
+                "height": 480
+            },
+            {
+                "url": "https://resources.tidal.com/images/f158b1a2/23b3/4f26/a09f/2f6ffcfdf275/640x428.jpg",
+                "width": 640,
+                "height": 428
+            },
+            {
+                "url": "https://resources.tidal.com/images/f158b1a2/23b3/4f26/a09f/2f6ffcfdf275/750x500.jpg",
+                "width": 750,
+                "height": 500
+            },
+            {
+                "url": "https://resources.tidal.com/images/f158b1a2/23b3/4f26/a09f/2f6ffcfdf275/750x750.jpg",
+                "width": 750,
+                "height": 750
+            }
+        ],
+        "tidalUrl": "https://tidal.com/browse/artist/5907"
+    }
+}

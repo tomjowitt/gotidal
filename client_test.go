@@ -1,8 +1,33 @@
 package gotidal
 
 import (
+	"bytes"
+	"fmt"
+	"io"
+	"net/http"
+	"os"
 	"testing"
 )
+
+type mockHTTPClient struct {
+	FilePath   string
+	StatusCode int
+}
+
+func (c *mockHTTPClient) Do(req *http.Request) (*http.Response, error) { // nolint:revive // req is unused
+	data, err := os.ReadFile(c.FilePath)
+	if err != nil {
+		return nil, fmt.Errorf("could not load payload file: %w", err)
+	}
+
+	buffer := bytes.NewBuffer(data)
+	readCloser := io.NopCloser(buffer)
+
+	return &http.Response{
+		StatusCode: c.StatusCode,
+		Body:       readCloser,
+	}, nil
+}
 
 func Test_lowercaseFirstLetter(t *testing.T) {
 	t.Parallel()
