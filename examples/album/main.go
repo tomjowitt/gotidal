@@ -21,7 +21,7 @@ func main() {
 
 	log.Println("-------------------------------------------------")
 	log.Println("Single Album")
-	log.Println("-------------------------------------------------")
+	log.Println(" ")
 
 	album, err := client.GetSingleAlbum(ctx, "51584178")
 	if err != nil {
@@ -32,7 +32,7 @@ func main() {
 
 	log.Println("-------------------------------------------------")
 	log.Println("Albums By Barcode ID")
-	log.Println("-------------------------------------------------")
+	log.Println(" ")
 
 	results, err := client.GetAlbumByBarcodeID(ctx, "197189111396")
 	if err != nil {
@@ -45,7 +45,7 @@ func main() {
 
 	log.Println("-------------------------------------------------")
 	log.Println("Multiple Albums")
-	log.Println("-------------------------------------------------")
+	log.Println(" ")
 
 	multiAlbums, err := client.GetMultipleAlbums(ctx, []string{"301846384", "2579864"})
 	if err != nil {
@@ -58,7 +58,7 @@ func main() {
 
 	log.Println("-------------------------------------------------")
 	log.Println("Album Tracks")
-	log.Println("-------------------------------------------------")
+	log.Println(" ")
 
 	items, err := client.GetAlbumTracks(ctx, "37267701")
 	if err != nil {
@@ -71,7 +71,7 @@ func main() {
 
 	log.Println("-------------------------------------------------")
 	log.Println("Similar Albums to 'New York Dolls - s/t'")
-	log.Println("-------------------------------------------------")
+	log.Println(" ")
 
 	similarIDs, err := client.GetSimilarAlbums(ctx, "3992356", gotidal.PaginationParams{Limit: 10})
 	if err != nil {
