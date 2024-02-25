@@ -123,3 +123,53 @@ func TestGetAlbumsByArtist(t *testing.T) {
 		})
 	}
 }
+
+func TestGetMultipleArtists(t *testing.T) {
+	t.Parallel()
+
+	type args struct {
+		httpClient HTTPClient
+		ids        []string
+	}
+
+	type expected struct {
+		ArtistCount int
+	}
+
+	tests := []struct {
+		name     string
+		args     args
+		expected expected
+		wantErr  bool
+	}{
+		{
+			"Multiple artists parses correctly",
+			args{
+				httpClient: &mockHTTPClient{FilePath: "testdata/multiple-artists.json", StatusCode: http.StatusOK},
+				ids:        []string{"5907", "3502119", "31874"},
+			},
+			expected{
+				ArtistCount: 3,
+			},
+			false,
+		},
+	}
+	for _, tt := range tests {
+		tt := tt
+		t.Run(tt.name, func(t *testing.T) {
+			t.Parallel()
+
+			client := &Client{httpClient: tt.args.httpClient}
+
+			artists, err := client.GetMultipleArtists(context.Background(), tt.args.ids)
+			if (err != nil) != tt.wantErr {
+				t.Errorf("Client.GetMultipleArtists() error = %v, wantErr %v", err, tt.wantErr)
+				return
+			}
+
+			if len(artists) != tt.expected.ArtistCount {
+				t.Errorf("Client.GetMultipleArtists() ArtistCount = %v, want %v", len(artists), tt.expected.ArtistCount)
+			}
+		})
+	}
+}

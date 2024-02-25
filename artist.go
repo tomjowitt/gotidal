@@ -5,6 +5,7 @@ import (
 	"encoding/json"
 	"fmt"
 	"net/http"
+	"strings"
 )
 
 // Artist represents an individual artist.
@@ -57,6 +58,35 @@ func (c *Client) GetAlbumsByArtist(ctx context.Context, id string, params Pagina
 	err = json.Unmarshal(response, &results)
 	if err != nil {
 		return nil, fmt.Errorf("failed to unmarshal the artist albums response body: %w", err)
+	}
+
+	return results.Data, nil
+}
+
+type artistResults struct {
+	Data []Artist `json:"data"`
+}
+
+// GetMultipleArtists returns a list of artists filtered by their IDs.
+func (c *Client) GetMultipleArtists(ctx context.Context, ids []string) ([]Artist, error) {
+	type multiArtistParams struct {
+		ids string
+	}
+
+	params := multiArtistParams{
+		ids: strings.Join(ids, ","),
+	}
+
+	response, err := c.request(ctx, http.MethodGet, "/artists", params)
+	if err != nil {
+		return nil, fmt.Errorf("failed to connect to the multiple artists endpoint: %w", err)
+	}
+
+	var results artistResults
+
+	err = json.Unmarshal(response, &results)
+	if err != nil {
+		return nil, fmt.Errorf("failed to unmarshal the multiple artists response body: %w", err)
 	}
 
 	return results.Data, nil
