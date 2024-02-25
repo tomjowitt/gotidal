@@ -68,6 +68,7 @@ linters:
     - predeclared
     - revive
     - rowserrcheck
+    - sloglint
     - sqlclosecheck
     - tenv
     - thelper

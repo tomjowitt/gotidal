@@ -1,0 +1,1874 @@
+{
+    "data": [
+        {
+            "resource": {
+                "id": "308302625",
+                "barcodeId": "713746319229",
+                "title": "Songs & Symphoniques: The Music of Moondog",
+                "artists": [
+                    {
+                        "id": "5184496",
+                        "name": "Ghost Train Orchestra",
+                        "picture": [
+                            {
+                                "url": "https://resources.tidal.com/images/f91e953b/70be/428e/a20c/37ebebd93df6/1024x256.jpg",
+                                "width": 1024,
+                                "height": 256
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/f91e953b/70be/428e/a20c/37ebebd93df6/1080x720.jpg",
+                                "width": 1080,
+                                "height": 720
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/f91e953b/70be/428e/a20c/37ebebd93df6/160x107.jpg",
+                                "width": 160,
+                                "height": 107
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/f91e953b/70be/428e/a20c/37ebebd93df6/160x160.jpg",
+                                "width": 160,
+                                "height": 160
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/f91e953b/70be/428e/a20c/37ebebd93df6/320x214.jpg",
+                                "width": 320,
+                                "height": 214
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/f91e953b/70be/428e/a20c/37ebebd93df6/320x320.jpg",
+                                "width": 320,
+                                "height": 320
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/f91e953b/70be/428e/a20c/37ebebd93df6/480x480.jpg",
+                                "width": 480,
+                                "height": 480
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/f91e953b/70be/428e/a20c/37ebebd93df6/640x428.jpg",
+                                "width": 640,
+                                "height": 428
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/f91e953b/70be/428e/a20c/37ebebd93df6/750x500.jpg",
+                                "width": 750,
+                                "height": 500
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/f91e953b/70be/428e/a20c/37ebebd93df6/750x750.jpg",
+                                "width": 750,
+                                "height": 750
+                            }
+                        ],
+                        "main": true
+                    },
+                    {
+                        "id": "5907",
+                        "name": "Kronos Quartet",
+                        "picture": [
+                            {
+                                "url": "https://resources.tidal.com/images/f158b1a2/23b3/4f26/a09f/2f6ffcfdf275/1024x256.jpg",
+                                "width": 1024,
+                                "height": 256
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/f158b1a2/23b3/4f26/a09f/2f6ffcfdf275/1080x720.jpg",
+                                "width": 1080,
+                                "height": 720
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/f158b1a2/23b3/4f26/a09f/2f6ffcfdf275/160x107.jpg",
+                                "width": 160,
+                                "height": 107
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/f158b1a2/23b3/4f26/a09f/2f6ffcfdf275/160x160.jpg",
+                                "width": 160,
+                                "height": 160
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/f158b1a2/23b3/4f26/a09f/2f6ffcfdf275/320x214.jpg",
+                                "width": 320,
+                                "height": 214
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/f158b1a2/23b3/4f26/a09f/2f6ffcfdf275/320x320.jpg",
+                                "width": 320,
+                                "height": 320
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/f158b1a2/23b3/4f26/a09f/2f6ffcfdf275/480x480.jpg",
+                                "width": 480,
+                                "height": 480
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/f158b1a2/23b3/4f26/a09f/2f6ffcfdf275/640x428.jpg",
+                                "width": 640,
+                                "height": 428
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/f158b1a2/23b3/4f26/a09f/2f6ffcfdf275/750x500.jpg",
+                                "width": 750,
+                                "height": 500
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/f158b1a2/23b3/4f26/a09f/2f6ffcfdf275/750x750.jpg",
+                                "width": 750,
+                                "height": 750
+                            }
+                        ],
+                        "main": true
+                    }
+                ],
+                "duration": 3719,
+                "releaseDate": "2023-09-22",
+                "imageCover": [
+                    {
+                        "url": "https://resources.tidal.com/images/04fd6780/a419/4369/b8a4/fb99912cdd77/1080x1080.jpg",
+                        "width": 1080,
+                        "height": 1080
+                    },
+                    {
+                        "url": "https://resources.tidal.com/images/04fd6780/a419/4369/b8a4/fb99912cdd77/1280x1280.jpg",
+                        "width": 1280,
+                        "height": 1280
+                    },
+                    {
+                        "url": "https://resources.tidal.com/images/04fd6780/a419/4369/b8a4/fb99912cdd77/160x160.jpg",
+                        "width": 160,
+                        "height": 160
+                    },
+                    {
+                        "url": "https://resources.tidal.com/images/04fd6780/a419/4369/b8a4/fb99912cdd77/320x320.jpg",
+                        "width": 320,
+                        "height": 320
+                    },
+                    {
+                        "url": "https://resources.tidal.com/images/04fd6780/a419/4369/b8a4/fb99912cdd77/640x640.jpg",
+                        "width": 640,
+                        "height": 640
+                    },
+                    {
+                        "url": "https://resources.tidal.com/images/04fd6780/a419/4369/b8a4/fb99912cdd77/750x750.jpg",
+                        "width": 750,
+                        "height": 750
+                    },
+                    {
+                        "url": "https://resources.tidal.com/images/04fd6780/a419/4369/b8a4/fb99912cdd77/80x80.jpg",
+                        "width": 80,
+                        "height": 80
+                    }
+                ],
+                "videoCover": [],
+                "numberOfVolumes": 1,
+                "numberOfTracks": 17,
+                "numberOfVideos": 0,
+                "type": "ALBUM",
+                "copyright": "2023 Cantaloupe Music",
+                "mediaMetadata": {
+                    "tags": [
+                        "HIRES_LOSSLESS",
+                        "LOSSLESS"
+                    ]
+                },
+                "properties": {},
+                "tidalUrl": "https://tidal.com/browse/album/308302625"
+            },
+            "id": "308302625",
+            "status": 200,
+            "message": "success"
+        },
+        {
+            "resource": {
+                "id": "312195623",
+                "barcodeId": "713746319243",
+                "title": "Why Spend a Dark Night with You?",
+                "artists": [
+                    {
+                        "id": "5184496",
+                        "name": "Ghost Train Orchestra",
+                        "picture": [
+                            {
+                                "url": "https://resources.tidal.com/images/f91e953b/70be/428e/a20c/37ebebd93df6/1024x256.jpg",
+                                "width": 1024,
+                                "height": 256
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/f91e953b/70be/428e/a20c/37ebebd93df6/1080x720.jpg",
+                                "width": 1080,
+                                "height": 720
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/f91e953b/70be/428e/a20c/37ebebd93df6/160x107.jpg",
+                                "width": 160,
+                                "height": 107
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/f91e953b/70be/428e/a20c/37ebebd93df6/160x160.jpg",
+                                "width": 160,
+                                "height": 160
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/f91e953b/70be/428e/a20c/37ebebd93df6/320x214.jpg",
+                                "width": 320,
+                                "height": 214
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/f91e953b/70be/428e/a20c/37ebebd93df6/320x320.jpg",
+                                "width": 320,
+                                "height": 320
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/f91e953b/70be/428e/a20c/37ebebd93df6/480x480.jpg",
+                                "width": 480,
+                                "height": 480
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/f91e953b/70be/428e/a20c/37ebebd93df6/640x428.jpg",
+                                "width": 640,
+                                "height": 428
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/f91e953b/70be/428e/a20c/37ebebd93df6/750x500.jpg",
+                                "width": 750,
+                                "height": 500
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/f91e953b/70be/428e/a20c/37ebebd93df6/750x750.jpg",
+                                "width": 750,
+                                "height": 750
+                            }
+                        ],
+                        "main": true
+                    },
+                    {
+                        "id": "5907",
+                        "name": "Kronos Quartet",
+                        "picture": [
+                            {
+                                "url": "https://resources.tidal.com/images/f158b1a2/23b3/4f26/a09f/2f6ffcfdf275/1024x256.jpg",
+                                "width": 1024,
+                                "height": 256
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/f158b1a2/23b3/4f26/a09f/2f6ffcfdf275/1080x720.jpg",
+                                "width": 1080,
+                                "height": 720
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/f158b1a2/23b3/4f26/a09f/2f6ffcfdf275/160x107.jpg",
+                                "width": 160,
+                                "height": 107
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/f158b1a2/23b3/4f26/a09f/2f6ffcfdf275/160x160.jpg",
+                                "width": 160,
+                                "height": 160
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/f158b1a2/23b3/4f26/a09f/2f6ffcfdf275/320x214.jpg",
+                                "width": 320,
+                                "height": 214
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/f158b1a2/23b3/4f26/a09f/2f6ffcfdf275/320x320.jpg",
+                                "width": 320,
+                                "height": 320
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/f158b1a2/23b3/4f26/a09f/2f6ffcfdf275/480x480.jpg",
+                                "width": 480,
+                                "height": 480
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/f158b1a2/23b3/4f26/a09f/2f6ffcfdf275/640x428.jpg",
+                                "width": 640,
+                                "height": 428
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/f158b1a2/23b3/4f26/a09f/2f6ffcfdf275/750x500.jpg",
+                                "width": 750,
+                                "height": 500
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/f158b1a2/23b3/4f26/a09f/2f6ffcfdf275/750x750.jpg",
+                                "width": 750,
+                                "height": 750
+                            }
+                        ],
+                        "main": true
+                    },
+                    {
+                        "id": "3575841",
+                        "name": "Joan As Police Woman",
+                        "picture": [
+                            {
+                                "url": "https://resources.tidal.com/images/46ade9ec/280b/41d7/9e02/c80730dfc0c9/1024x256.jpg",
+                                "width": 1024,
+                                "height": 256
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/46ade9ec/280b/41d7/9e02/c80730dfc0c9/1080x720.jpg",
+                                "width": 1080,
+                                "height": 720
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/46ade9ec/280b/41d7/9e02/c80730dfc0c9/160x107.jpg",
+                                "width": 160,
+                                "height": 107
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/46ade9ec/280b/41d7/9e02/c80730dfc0c9/160x160.jpg",
+                                "width": 160,
+                                "height": 160
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/46ade9ec/280b/41d7/9e02/c80730dfc0c9/320x214.jpg",
+                                "width": 320,
+                                "height": 214
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/46ade9ec/280b/41d7/9e02/c80730dfc0c9/320x320.jpg",
+                                "width": 320,
+                                "height": 320
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/46ade9ec/280b/41d7/9e02/c80730dfc0c9/480x480.jpg",
+                                "width": 480,
+                                "height": 480
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/46ade9ec/280b/41d7/9e02/c80730dfc0c9/640x428.jpg",
+                                "width": 640,
+                                "height": 428
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/46ade9ec/280b/41d7/9e02/c80730dfc0c9/750x500.jpg",
+                                "width": 750,
+                                "height": 500
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/46ade9ec/280b/41d7/9e02/c80730dfc0c9/750x750.jpg",
+                                "width": 750,
+                                "height": 750
+                            }
+                        ],
+                        "main": false
+                    }
+                ],
+                "duration": 218,
+                "releaseDate": "2023-09-08",
+                "imageCover": [
+                    {
+                        "url": "https://resources.tidal.com/images/b19bffd0/2b35/48ac/b4c0/5a7e97e286df/1080x1080.jpg",
+                        "width": 1080,
+                        "height": 1080
+                    },
+                    {
+                        "url": "https://resources.tidal.com/images/b19bffd0/2b35/48ac/b4c0/5a7e97e286df/1280x1280.jpg",
+                        "width": 1280,
+                        "height": 1280
+                    },
+                    {
+                        "url": "https://resources.tidal.com/images/b19bffd0/2b35/48ac/b4c0/5a7e97e286df/160x160.jpg",
+                        "width": 160,
+                        "height": 160
+                    },
+                    {
+                        "url": "https://resources.tidal.com/images/b19bffd0/2b35/48ac/b4c0/5a7e97e286df/320x320.jpg",
+                        "width": 320,
+                        "height": 320
+                    },
+                    {
+                        "url": "https://resources.tidal.com/images/b19bffd0/2b35/48ac/b4c0/5a7e97e286df/640x640.jpg",
+                        "width": 640,
+                        "height": 640
+                    },
+                    {
+                        "url": "https://resources.tidal.com/images/b19bffd0/2b35/48ac/b4c0/5a7e97e286df/750x750.jpg",
+                        "width": 750,
+                        "height": 750
+                    },
+                    {
+                        "url": "https://resources.tidal.com/images/b19bffd0/2b35/48ac/b4c0/5a7e97e286df/80x80.jpg",
+                        "width": 80,
+                        "height": 80
+                    }
+                ],
+                "videoCover": [],
+                "numberOfVolumes": 1,
+                "numberOfTracks": 1,
+                "numberOfVideos": 0,
+                "type": "SINGLE",
+                "copyright": "2023 Cantaloupe Music",
+                "mediaMetadata": {
+                    "tags": [
+                        "HIRES_LOSSLESS",
+                        "LOSSLESS"
+                    ]
+                },
+                "properties": {},
+                "tidalUrl": "https://tidal.com/browse/album/312195623"
+            },
+            "id": "312195623",
+            "status": 200,
+            "message": "success"
+        },
+        {
+            "resource": {
+                "id": "305238210",
+                "barcodeId": "713746318710",
+                "title": "Michael Gordon: Campaign Songs",
+                "artists": [
+                    {
+                        "id": "5907",
+                        "name": "Kronos Quartet",
+                        "picture": [
+                            {
+                                "url": "https://resources.tidal.com/images/f158b1a2/23b3/4f26/a09f/2f6ffcfdf275/1024x256.jpg",
+                                "width": 1024,
+                                "height": 256
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/f158b1a2/23b3/4f26/a09f/2f6ffcfdf275/1080x720.jpg",
+                                "width": 1080,
+                                "height": 720
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/f158b1a2/23b3/4f26/a09f/2f6ffcfdf275/160x107.jpg",
+                                "width": 160,
+                                "height": 107
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/f158b1a2/23b3/4f26/a09f/2f6ffcfdf275/160x160.jpg",
+                                "width": 160,
+                                "height": 160
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/f158b1a2/23b3/4f26/a09f/2f6ffcfdf275/320x214.jpg",
+                                "width": 320,
+                                "height": 214
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/f158b1a2/23b3/4f26/a09f/2f6ffcfdf275/320x320.jpg",
+                                "width": 320,
+                                "height": 320
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/f158b1a2/23b3/4f26/a09f/2f6ffcfdf275/480x480.jpg",
+                                "width": 480,
+                                "height": 480
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/f158b1a2/23b3/4f26/a09f/2f6ffcfdf275/640x428.jpg",
+                                "width": 640,
+                                "height": 428
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/f158b1a2/23b3/4f26/a09f/2f6ffcfdf275/750x500.jpg",
+                                "width": 750,
+                                "height": 500
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/f158b1a2/23b3/4f26/a09f/2f6ffcfdf275/750x750.jpg",
+                                "width": 750,
+                                "height": 750
+                            }
+                        ],
+                        "main": true
+                    }
+                ],
+                "duration": 475,
+                "releaseDate": "2023-07-21",
+                "imageCover": [
+                    {
+                        "url": "https://resources.tidal.com/images/1b2537bb/3ba4/41f6/b5a3/18356526a092/1080x1080.jpg",
+                        "width": 1080,
+                        "height": 1080
+                    },
+                    {
+                        "url": "https://resources.tidal.com/images/1b2537bb/3ba4/41f6/b5a3/18356526a092/1280x1280.jpg",
+                        "width": 1280,
+                        "height": 1280
+                    },
+                    {
+                        "url": "https://resources.tidal.com/images/1b2537bb/3ba4/41f6/b5a3/18356526a092/160x160.jpg",
+                        "width": 160,
+                        "height": 160
+                    },
+                    {
+                        "url": "https://resources.tidal.com/images/1b2537bb/3ba4/41f6/b5a3/18356526a092/320x320.jpg",
+                        "width": 320,
+                        "height": 320
+                    },
+                    {
+                        "url": "https://resources.tidal.com/images/1b2537bb/3ba4/41f6/b5a3/18356526a092/640x640.jpg",
+                        "width": 640,
+                        "height": 640
+                    },
+                    {
+                        "url": "https://resources.tidal.com/images/1b2537bb/3ba4/41f6/b5a3/18356526a092/750x750.jpg",
+                        "width": 750,
+                        "height": 750
+                    },
+                    {
+                        "url": "https://resources.tidal.com/images/1b2537bb/3ba4/41f6/b5a3/18356526a092/80x80.jpg",
+                        "width": 80,
+                        "height": 80
+                    }
+                ],
+                "videoCover": [],
+                "numberOfVolumes": 1,
+                "numberOfTracks": 8,
+                "numberOfVideos": 0,
+                "type": "ALBUM",
+                "copyright": "2023 Cantaloupe Music",
+                "mediaMetadata": {
+                    "tags": [
+                        "LOSSLESS"
+                    ]
+                },
+                "properties": {},
+                "tidalUrl": "https://tidal.com/browse/album/305238210"
+            },
+            "id": "305238210",
+            "status": 200,
+            "message": "success"
+        },
+        {
+            "resource": {
+                "id": "300255974",
+                "barcodeId": "713746319236",
+                "title": "High On A Rocky Ledge",
+                "artists": [
+                    {
+                        "id": "5184496",
+                        "name": "Ghost Train Orchestra",
+                        "picture": [
+                            {
+                                "url": "https://resources.tidal.com/images/f91e953b/70be/428e/a20c/37ebebd93df6/1024x256.jpg",
+                                "width": 1024,
+                                "height": 256
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/f91e953b/70be/428e/a20c/37ebebd93df6/1080x720.jpg",
+                                "width": 1080,
+                                "height": 720
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/f91e953b/70be/428e/a20c/37ebebd93df6/160x107.jpg",
+                                "width": 160,
+                                "height": 107
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/f91e953b/70be/428e/a20c/37ebebd93df6/160x160.jpg",
+                                "width": 160,
+                                "height": 160
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/f91e953b/70be/428e/a20c/37ebebd93df6/320x214.jpg",
+                                "width": 320,
+                                "height": 214
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/f91e953b/70be/428e/a20c/37ebebd93df6/320x320.jpg",
+                                "width": 320,
+                                "height": 320
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/f91e953b/70be/428e/a20c/37ebebd93df6/480x480.jpg",
+                                "width": 480,
+                                "height": 480
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/f91e953b/70be/428e/a20c/37ebebd93df6/640x428.jpg",
+                                "width": 640,
+                                "height": 428
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/f91e953b/70be/428e/a20c/37ebebd93df6/750x500.jpg",
+                                "width": 750,
+                                "height": 500
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/f91e953b/70be/428e/a20c/37ebebd93df6/750x750.jpg",
+                                "width": 750,
+                                "height": 750
+                            }
+                        ],
+                        "main": true
+                    },
+                    {
+                        "id": "5907",
+                        "name": "Kronos Quartet",
+                        "picture": [
+                            {
+                                "url": "https://resources.tidal.com/images/f158b1a2/23b3/4f26/a09f/2f6ffcfdf275/1024x256.jpg",
+                                "width": 1024,
+                                "height": 256
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/f158b1a2/23b3/4f26/a09f/2f6ffcfdf275/1080x720.jpg",
+                                "width": 1080,
+                                "height": 720
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/f158b1a2/23b3/4f26/a09f/2f6ffcfdf275/160x107.jpg",
+                                "width": 160,
+                                "height": 107
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/f158b1a2/23b3/4f26/a09f/2f6ffcfdf275/160x160.jpg",
+                                "width": 160,
+                                "height": 160
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/f158b1a2/23b3/4f26/a09f/2f6ffcfdf275/320x214.jpg",
+                                "width": 320,
+                                "height": 214
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/f158b1a2/23b3/4f26/a09f/2f6ffcfdf275/320x320.jpg",
+                                "width": 320,
+                                "height": 320
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/f158b1a2/23b3/4f26/a09f/2f6ffcfdf275/480x480.jpg",
+                                "width": 480,
+                                "height": 480
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/f158b1a2/23b3/4f26/a09f/2f6ffcfdf275/640x428.jpg",
+                                "width": 640,
+                                "height": 428
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/f158b1a2/23b3/4f26/a09f/2f6ffcfdf275/750x500.jpg",
+                                "width": 750,
+                                "height": 500
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/f158b1a2/23b3/4f26/a09f/2f6ffcfdf275/750x750.jpg",
+                                "width": 750,
+                                "height": 750
+                            }
+                        ],
+                        "main": true
+                    },
+                    {
+                        "id": "3519568",
+                        "name": "Marissa Nadler",
+                        "picture": [
+                            {
+                                "url": "https://resources.tidal.com/images/5b6379b9/dd61/49a3/b93a/2ec887861fc0/1024x256.jpg",
+                                "width": 1024,
+                                "height": 256
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/5b6379b9/dd61/49a3/b93a/2ec887861fc0/1080x720.jpg",
+                                "width": 1080,
+                                "height": 720
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/5b6379b9/dd61/49a3/b93a/2ec887861fc0/160x107.jpg",
+                                "width": 160,
+                                "height": 107
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/5b6379b9/dd61/49a3/b93a/2ec887861fc0/160x160.jpg",
+                                "width": 160,
+                                "height": 160
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/5b6379b9/dd61/49a3/b93a/2ec887861fc0/320x214.jpg",
+                                "width": 320,
+                                "height": 214
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/5b6379b9/dd61/49a3/b93a/2ec887861fc0/320x320.jpg",
+                                "width": 320,
+                                "height": 320
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/5b6379b9/dd61/49a3/b93a/2ec887861fc0/480x480.jpg",
+                                "width": 480,
+                                "height": 480
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/5b6379b9/dd61/49a3/b93a/2ec887861fc0/640x428.jpg",
+                                "width": 640,
+                                "height": 428
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/5b6379b9/dd61/49a3/b93a/2ec887861fc0/750x500.jpg",
+                                "width": 750,
+                                "height": 500
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/5b6379b9/dd61/49a3/b93a/2ec887861fc0/750x750.jpg",
+                                "width": 750,
+                                "height": 750
+                            }
+                        ],
+                        "main": true
+                    }
+                ],
+                "duration": 273,
+                "releaseDate": "2023-06-30",
+                "imageCover": [
+                    {
+                        "url": "https://resources.tidal.com/images/eda182a1/f590/4b87/9c78/8c72c0dd799e/1080x1080.jpg",
+                        "width": 1080,
+                        "height": 1080
+                    },
+                    {
+                        "url": "https://resources.tidal.com/images/eda182a1/f590/4b87/9c78/8c72c0dd799e/1280x1280.jpg",
+                        "width": 1280,
+                        "height": 1280
+                    },
+                    {
+                        "url": "https://resources.tidal.com/images/eda182a1/f590/4b87/9c78/8c72c0dd799e/160x160.jpg",
+                        "width": 160,
+                        "height": 160
+                    },
+                    {
+                        "url": "https://resources.tidal.com/images/eda182a1/f590/4b87/9c78/8c72c0dd799e/320x320.jpg",
+                        "width": 320,
+                        "height": 320
+                    },
+                    {
+                        "url": "https://resources.tidal.com/images/eda182a1/f590/4b87/9c78/8c72c0dd799e/640x640.jpg",
+                        "width": 640,
+                        "height": 640
+                    },
+                    {
+                        "url": "https://resources.tidal.com/images/eda182a1/f590/4b87/9c78/8c72c0dd799e/750x750.jpg",
+                        "width": 750,
+                        "height": 750
+                    },
+                    {
+                        "url": "https://resources.tidal.com/images/eda182a1/f590/4b87/9c78/8c72c0dd799e/80x80.jpg",
+                        "width": 80,
+                        "height": 80
+                    }
+                ],
+                "videoCover": [],
+                "numberOfVolumes": 1,
+                "numberOfTracks": 1,
+                "numberOfVideos": 0,
+                "type": "SINGLE",
+                "copyright": "2023 Cantaloupe Music",
+                "mediaMetadata": {
+                    "tags": [
+                        "HIRES_LOSSLESS",
+                        "LOSSLESS"
+                    ]
+                },
+                "properties": {},
+                "tidalUrl": "https://tidal.com/browse/album/300255974"
+            },
+            "id": "300255974",
+            "status": 200,
+            "message": "success"
+        },
+        {
+            "resource": {
+                "id": "291689359",
+                "barcodeId": "713746318741",
+                "title": "Campaign Songs #2: Which Side Are You On?",
+                "artists": [
+                    {
+                        "id": "5907",
+                        "name": "Kronos Quartet",
+                        "picture": [
+                            {
+                                "url": "https://resources.tidal.com/images/f158b1a2/23b3/4f26/a09f/2f6ffcfdf275/1024x256.jpg",
+                                "width": 1024,
+                                "height": 256
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/f158b1a2/23b3/4f26/a09f/2f6ffcfdf275/1080x720.jpg",
+                                "width": 1080,
+                                "height": 720
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/f158b1a2/23b3/4f26/a09f/2f6ffcfdf275/160x107.jpg",
+                                "width": 160,
+                                "height": 107
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/f158b1a2/23b3/4f26/a09f/2f6ffcfdf275/160x160.jpg",
+                                "width": 160,
+                                "height": 160
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/f158b1a2/23b3/4f26/a09f/2f6ffcfdf275/320x214.jpg",
+                                "width": 320,
+                                "height": 214
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/f158b1a2/23b3/4f26/a09f/2f6ffcfdf275/320x320.jpg",
+                                "width": 320,
+                                "height": 320
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/f158b1a2/23b3/4f26/a09f/2f6ffcfdf275/480x480.jpg",
+                                "width": 480,
+                                "height": 480
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/f158b1a2/23b3/4f26/a09f/2f6ffcfdf275/640x428.jpg",
+                                "width": 640,
+                                "height": 428
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/f158b1a2/23b3/4f26/a09f/2f6ffcfdf275/750x500.jpg",
+                                "width": 750,
+                                "height": 500
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/f158b1a2/23b3/4f26/a09f/2f6ffcfdf275/750x750.jpg",
+                                "width": 750,
+                                "height": 750
+                            }
+                        ],
+                        "main": true
+                    },
+                    {
+                        "id": "27114613",
+                        "name": "Michael Gordon",
+                        "picture": [
+                            {
+                                "url": "https://resources.tidal.com/images/652fe2b5/ca1e/4843/bc43/606cfd44c688/1024x256.jpg",
+                                "width": 1024,
+                                "height": 256
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/652fe2b5/ca1e/4843/bc43/606cfd44c688/1080x720.jpg",
+                                "width": 1080,
+                                "height": 720
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/652fe2b5/ca1e/4843/bc43/606cfd44c688/160x107.jpg",
+                                "width": 160,
+                                "height": 107
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/652fe2b5/ca1e/4843/bc43/606cfd44c688/160x160.jpg",
+                                "width": 160,
+                                "height": 160
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/652fe2b5/ca1e/4843/bc43/606cfd44c688/320x214.jpg",
+                                "width": 320,
+                                "height": 214
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/652fe2b5/ca1e/4843/bc43/606cfd44c688/320x320.jpg",
+                                "width": 320,
+                                "height": 320
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/652fe2b5/ca1e/4843/bc43/606cfd44c688/480x480.jpg",
+                                "width": 480,
+                                "height": 480
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/652fe2b5/ca1e/4843/bc43/606cfd44c688/640x428.jpg",
+                                "width": 640,
+                                "height": 428
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/652fe2b5/ca1e/4843/bc43/606cfd44c688/750x500.jpg",
+                                "width": 750,
+                                "height": 500
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/652fe2b5/ca1e/4843/bc43/606cfd44c688/750x750.jpg",
+                                "width": 750,
+                                "height": 750
+                            }
+                        ],
+                        "main": true
+                    }
+                ],
+                "duration": 57,
+                "releaseDate": "2023-04-28",
+                "imageCover": [
+                    {
+                        "url": "https://resources.tidal.com/images/38816f08/4c2f/4b16/bc8d/8f6eefba8f8a/1080x1080.jpg",
+                        "width": 1080,
+                        "height": 1080
+                    },
+                    {
+                        "url": "https://resources.tidal.com/images/38816f08/4c2f/4b16/bc8d/8f6eefba8f8a/1280x1280.jpg",
+                        "width": 1280,
+                        "height": 1280
+                    },
+                    {
+                        "url": "https://resources.tidal.com/images/38816f08/4c2f/4b16/bc8d/8f6eefba8f8a/160x160.jpg",
+                        "width": 160,
+                        "height": 160
+                    },
+                    {
+                        "url": "https://resources.tidal.com/images/38816f08/4c2f/4b16/bc8d/8f6eefba8f8a/320x320.jpg",
+                        "width": 320,
+                        "height": 320
+                    },
+                    {
+                        "url": "https://resources.tidal.com/images/38816f08/4c2f/4b16/bc8d/8f6eefba8f8a/640x640.jpg",
+                        "width": 640,
+                        "height": 640
+                    },
+                    {
+                        "url": "https://resources.tidal.com/images/38816f08/4c2f/4b16/bc8d/8f6eefba8f8a/750x750.jpg",
+                        "width": 750,
+                        "height": 750
+                    },
+                    {
+                        "url": "https://resources.tidal.com/images/38816f08/4c2f/4b16/bc8d/8f6eefba8f8a/80x80.jpg",
+                        "width": 80,
+                        "height": 80
+                    }
+                ],
+                "videoCover": [],
+                "numberOfVolumes": 1,
+                "numberOfTracks": 1,
+                "numberOfVideos": 0,
+                "type": "SINGLE",
+                "copyright": "2023 Cantaloupe Music",
+                "mediaMetadata": {
+                    "tags": [
+                        "LOSSLESS"
+                    ]
+                },
+                "properties": {},
+                "tidalUrl": "https://tidal.com/browse/album/291689359"
+            },
+            "id": "291689359",
+            "status": 200,
+            "message": "success"
+        },
+        {
+            "resource": {
+                "id": "283643760",
+                "barcodeId": "713746318734",
+                "title": "Campaign Songs #1: God Bless America",
+                "artists": [
+                    {
+                        "id": "5907",
+                        "name": "Kronos Quartet",
+                        "picture": [
+                            {
+                                "url": "https://resources.tidal.com/images/f158b1a2/23b3/4f26/a09f/2f6ffcfdf275/1024x256.jpg",
+                                "width": 1024,
+                                "height": 256
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/f158b1a2/23b3/4f26/a09f/2f6ffcfdf275/1080x720.jpg",
+                                "width": 1080,
+                                "height": 720
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/f158b1a2/23b3/4f26/a09f/2f6ffcfdf275/160x107.jpg",
+                                "width": 160,
+                                "height": 107
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/f158b1a2/23b3/4f26/a09f/2f6ffcfdf275/160x160.jpg",
+                                "width": 160,
+                                "height": 160
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/f158b1a2/23b3/4f26/a09f/2f6ffcfdf275/320x214.jpg",
+                                "width": 320,
+                                "height": 214
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/f158b1a2/23b3/4f26/a09f/2f6ffcfdf275/320x320.jpg",
+                                "width": 320,
+                                "height": 320
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/f158b1a2/23b3/4f26/a09f/2f6ffcfdf275/480x480.jpg",
+                                "width": 480,
+                                "height": 480
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/f158b1a2/23b3/4f26/a09f/2f6ffcfdf275/640x428.jpg",
+                                "width": 640,
+                                "height": 428
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/f158b1a2/23b3/4f26/a09f/2f6ffcfdf275/750x500.jpg",
+                                "width": 750,
+                                "height": 500
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/f158b1a2/23b3/4f26/a09f/2f6ffcfdf275/750x750.jpg",
+                                "width": 750,
+                                "height": 750
+                            }
+                        ],
+                        "main": true
+                    },
+                    {
+                        "id": "27114613",
+                        "name": "Michael Gordon",
+                        "picture": [
+                            {
+                                "url": "https://resources.tidal.com/images/652fe2b5/ca1e/4843/bc43/606cfd44c688/1024x256.jpg",
+                                "width": 1024,
+                                "height": 256
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/652fe2b5/ca1e/4843/bc43/606cfd44c688/1080x720.jpg",
+                                "width": 1080,
+                                "height": 720
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/652fe2b5/ca1e/4843/bc43/606cfd44c688/160x107.jpg",
+                                "width": 160,
+                                "height": 107
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/652fe2b5/ca1e/4843/bc43/606cfd44c688/160x160.jpg",
+                                "width": 160,
+                                "height": 160
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/652fe2b5/ca1e/4843/bc43/606cfd44c688/320x214.jpg",
+                                "width": 320,
+                                "height": 214
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/652fe2b5/ca1e/4843/bc43/606cfd44c688/320x320.jpg",
+                                "width": 320,
+                                "height": 320
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/652fe2b5/ca1e/4843/bc43/606cfd44c688/480x480.jpg",
+                                "width": 480,
+                                "height": 480
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/652fe2b5/ca1e/4843/bc43/606cfd44c688/640x428.jpg",
+                                "width": 640,
+                                "height": 428
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/652fe2b5/ca1e/4843/bc43/606cfd44c688/750x500.jpg",
+                                "width": 750,
+                                "height": 500
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/652fe2b5/ca1e/4843/bc43/606cfd44c688/750x750.jpg",
+                                "width": 750,
+                                "height": 750
+                            }
+                        ],
+                        "main": true
+                    }
+                ],
+                "duration": 66,
+                "releaseDate": "2023-03-24",
+                "imageCover": [
+                    {
+                        "url": "https://resources.tidal.com/images/94e34e20/b37d/4af5/ba2b/f7479d879299/1080x1080.jpg",
+                        "width": 1080,
+                        "height": 1080
+                    },
+                    {
+                        "url": "https://resources.tidal.com/images/94e34e20/b37d/4af5/ba2b/f7479d879299/1280x1280.jpg",
+                        "width": 1280,
+                        "height": 1280
+                    },
+                    {
+                        "url": "https://resources.tidal.com/images/94e34e20/b37d/4af5/ba2b/f7479d879299/160x160.jpg",
+                        "width": 160,
+                        "height": 160
+                    },
+                    {
+                        "url": "https://resources.tidal.com/images/94e34e20/b37d/4af5/ba2b/f7479d879299/320x320.jpg",
+                        "width": 320,
+                        "height": 320
+                    },
+                    {
+                        "url": "https://resources.tidal.com/images/94e34e20/b37d/4af5/ba2b/f7479d879299/640x640.jpg",
+                        "width": 640,
+                        "height": 640
+                    },
+                    {
+                        "url": "https://resources.tidal.com/images/94e34e20/b37d/4af5/ba2b/f7479d879299/750x750.jpg",
+                        "width": 750,
+                        "height": 750
+                    },
+                    {
+                        "url": "https://resources.tidal.com/images/94e34e20/b37d/4af5/ba2b/f7479d879299/80x80.jpg",
+                        "width": 80,
+                        "height": 80
+                    }
+                ],
+                "videoCover": [],
+                "numberOfVolumes": 1,
+                "numberOfTracks": 1,
+                "numberOfVideos": 0,
+                "type": "SINGLE",
+                "copyright": "2023 Cantaloupe Music",
+                "mediaMetadata": {
+                    "tags": [
+                        "LOSSLESS"
+                    ]
+                },
+                "properties": {},
+                "tidalUrl": "https://tidal.com/browse/album/283643760"
+            },
+            "id": "283643760",
+            "status": 200,
+            "message": "success"
+        },
+        {
+            "resource": {
+                "id": "217344854",
+                "barcodeId": "093074025154",
+                "title": "Mỹ Lai",
+                "artists": [
+                    {
+                        "id": "5907",
+                        "name": "Kronos Quartet",
+                        "picture": [
+                            {
+                                "url": "https://resources.tidal.com/images/f158b1a2/23b3/4f26/a09f/2f6ffcfdf275/1024x256.jpg",
+                                "width": 1024,
+                                "height": 256
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/f158b1a2/23b3/4f26/a09f/2f6ffcfdf275/1080x720.jpg",
+                                "width": 1080,
+                                "height": 720
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/f158b1a2/23b3/4f26/a09f/2f6ffcfdf275/160x107.jpg",
+                                "width": 160,
+                                "height": 107
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/f158b1a2/23b3/4f26/a09f/2f6ffcfdf275/160x160.jpg",
+                                "width": 160,
+                                "height": 160
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/f158b1a2/23b3/4f26/a09f/2f6ffcfdf275/320x214.jpg",
+                                "width": 320,
+                                "height": 214
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/f158b1a2/23b3/4f26/a09f/2f6ffcfdf275/320x320.jpg",
+                                "width": 320,
+                                "height": 320
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/f158b1a2/23b3/4f26/a09f/2f6ffcfdf275/480x480.jpg",
+                                "width": 480,
+                                "height": 480
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/f158b1a2/23b3/4f26/a09f/2f6ffcfdf275/640x428.jpg",
+                                "width": 640,
+                                "height": 428
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/f158b1a2/23b3/4f26/a09f/2f6ffcfdf275/750x500.jpg",
+                                "width": 750,
+                                "height": 500
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/f158b1a2/23b3/4f26/a09f/2f6ffcfdf275/750x750.jpg",
+                                "width": 750,
+                                "height": 750
+                            }
+                        ],
+                        "main": true
+                    },
+                    {
+                        "id": "4184479",
+                        "name": "Rinde Eckert",
+                        "picture": [
+                            {
+                                "url": "https://resources.tidal.com/images/186a89b0/d0f6/4b5c/b4c0/cb2dffe1e9a2/1024x256.jpg",
+                                "width": 1024,
+                                "height": 256
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/186a89b0/d0f6/4b5c/b4c0/cb2dffe1e9a2/1080x720.jpg",
+                                "width": 1080,
+                                "height": 720
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/186a89b0/d0f6/4b5c/b4c0/cb2dffe1e9a2/160x107.jpg",
+                                "width": 160,
+                                "height": 107
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/186a89b0/d0f6/4b5c/b4c0/cb2dffe1e9a2/160x160.jpg",
+                                "width": 160,
+                                "height": 160
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/186a89b0/d0f6/4b5c/b4c0/cb2dffe1e9a2/320x214.jpg",
+                                "width": 320,
+                                "height": 214
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/186a89b0/d0f6/4b5c/b4c0/cb2dffe1e9a2/320x320.jpg",
+                                "width": 320,
+                                "height": 320
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/186a89b0/d0f6/4b5c/b4c0/cb2dffe1e9a2/480x480.jpg",
+                                "width": 480,
+                                "height": 480
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/186a89b0/d0f6/4b5c/b4c0/cb2dffe1e9a2/640x428.jpg",
+                                "width": 640,
+                                "height": 428
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/186a89b0/d0f6/4b5c/b4c0/cb2dffe1e9a2/750x500.jpg",
+                                "width": 750,
+                                "height": 500
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/186a89b0/d0f6/4b5c/b4c0/cb2dffe1e9a2/750x750.jpg",
+                                "width": 750,
+                                "height": 750
+                            }
+                        ],
+                        "main": true
+                    },
+                    {
+                        "id": "26244578",
+                        "name": "Vân-Ánh Vanessa Võ",
+                        "picture": [],
+                        "main": true
+                    }
+                ],
+                "duration": 4254,
+                "releaseDate": "2022-05-20",
+                "imageCover": [
+                    {
+                        "url": "https://resources.tidal.com/images/8a1e850f/7085/4c38/a66b/cec5b96eccad/1080x1080.jpg",
+                        "width": 1080,
+                        "height": 1080
+                    },
+                    {
+                        "url": "https://resources.tidal.com/images/8a1e850f/7085/4c38/a66b/cec5b96eccad/1280x1280.jpg",
+                        "width": 1280,
+                        "height": 1280
+                    },
+                    {
+                        "url": "https://resources.tidal.com/images/8a1e850f/7085/4c38/a66b/cec5b96eccad/160x160.jpg",
+                        "width": 160,
+                        "height": 160
+                    },
+                    {
+                        "url": "https://resources.tidal.com/images/8a1e850f/7085/4c38/a66b/cec5b96eccad/320x320.jpg",
+                        "width": 320,
+                        "height": 320
+                    },
+                    {
+                        "url": "https://resources.tidal.com/images/8a1e850f/7085/4c38/a66b/cec5b96eccad/640x640.jpg",
+                        "width": 640,
+                        "height": 640
+                    },
+                    {
+                        "url": "https://resources.tidal.com/images/8a1e850f/7085/4c38/a66b/cec5b96eccad/750x750.jpg",
+                        "width": 750,
+                        "height": 750
+                    },
+                    {
+                        "url": "https://resources.tidal.com/images/8a1e850f/7085/4c38/a66b/cec5b96eccad/80x80.jpg",
+                        "width": 80,
+                        "height": 80
+                    }
+                ],
+                "videoCover": [],
+                "numberOfVolumes": 1,
+                "numberOfTracks": 8,
+                "numberOfVideos": 0,
+                "type": "ALBUM",
+                "copyright": "(C) 2022 Smithsonian Folkways Recordings",
+                "mediaMetadata": {
+                    "tags": [
+                        "LOSSLESS"
+                    ]
+                },
+                "properties": {
+                    "content": [
+                        "explicit"
+                    ]
+                },
+                "tidalUrl": "https://tidal.com/browse/album/217344854"
+            },
+            "id": "217344854",
+            "status": 200,
+            "message": "success"
+        },
+        {
+            "resource": {
+                "id": "217339487",
+                "barcodeId": "093075610250",
+                "title": "Third Landing: Fishing (Excerpt)",
+                "artists": [
+                    {
+                        "id": "5907",
+                        "name": "Kronos Quartet",
+                        "picture": [
+                            {
+                                "url": "https://resources.tidal.com/images/f158b1a2/23b3/4f26/a09f/2f6ffcfdf275/1024x256.jpg",
+                                "width": 1024,
+                                "height": 256
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/f158b1a2/23b3/4f26/a09f/2f6ffcfdf275/1080x720.jpg",
+                                "width": 1080,
+                                "height": 720
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/f158b1a2/23b3/4f26/a09f/2f6ffcfdf275/160x107.jpg",
+                                "width": 160,
+                                "height": 107
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/f158b1a2/23b3/4f26/a09f/2f6ffcfdf275/160x160.jpg",
+                                "width": 160,
+                                "height": 160
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/f158b1a2/23b3/4f26/a09f/2f6ffcfdf275/320x214.jpg",
+                                "width": 320,
+                                "height": 214
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/f158b1a2/23b3/4f26/a09f/2f6ffcfdf275/320x320.jpg",
+                                "width": 320,
+                                "height": 320
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/f158b1a2/23b3/4f26/a09f/2f6ffcfdf275/480x480.jpg",
+                                "width": 480,
+                                "height": 480
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/f158b1a2/23b3/4f26/a09f/2f6ffcfdf275/640x428.jpg",
+                                "width": 640,
+                                "height": 428
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/f158b1a2/23b3/4f26/a09f/2f6ffcfdf275/750x500.jpg",
+                                "width": 750,
+                                "height": 500
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/f158b1a2/23b3/4f26/a09f/2f6ffcfdf275/750x750.jpg",
+                                "width": 750,
+                                "height": 750
+                            }
+                        ],
+                        "main": true
+                    },
+                    {
+                        "id": "4184479",
+                        "name": "Rinde Eckert",
+                        "picture": [
+                            {
+                                "url": "https://resources.tidal.com/images/186a89b0/d0f6/4b5c/b4c0/cb2dffe1e9a2/1024x256.jpg",
+                                "width": 1024,
+                                "height": 256
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/186a89b0/d0f6/4b5c/b4c0/cb2dffe1e9a2/1080x720.jpg",
+                                "width": 1080,
+                                "height": 720
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/186a89b0/d0f6/4b5c/b4c0/cb2dffe1e9a2/160x107.jpg",
+                                "width": 160,
+                                "height": 107
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/186a89b0/d0f6/4b5c/b4c0/cb2dffe1e9a2/160x160.jpg",
+                                "width": 160,
+                                "height": 160
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/186a89b0/d0f6/4b5c/b4c0/cb2dffe1e9a2/320x214.jpg",
+                                "width": 320,
+                                "height": 214
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/186a89b0/d0f6/4b5c/b4c0/cb2dffe1e9a2/320x320.jpg",
+                                "width": 320,
+                                "height": 320
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/186a89b0/d0f6/4b5c/b4c0/cb2dffe1e9a2/480x480.jpg",
+                                "width": 480,
+                                "height": 480
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/186a89b0/d0f6/4b5c/b4c0/cb2dffe1e9a2/640x428.jpg",
+                                "width": 640,
+                                "height": 428
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/186a89b0/d0f6/4b5c/b4c0/cb2dffe1e9a2/750x500.jpg",
+                                "width": 750,
+                                "height": 500
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/186a89b0/d0f6/4b5c/b4c0/cb2dffe1e9a2/750x750.jpg",
+                                "width": 750,
+                                "height": 750
+                            }
+                        ],
+                        "main": true
+                    },
+                    {
+                        "id": "30766498",
+                        "name": "Vân-Ành Vanessa Võ",
+                        "picture": [],
+                        "main": true
+                    }
+                ],
+                "duration": 196,
+                "releaseDate": "2022-04-21",
+                "imageCover": [
+                    {
+                        "url": "https://resources.tidal.com/images/e6f813d8/a0a4/4d34/b253/9ec34e78ad22/1080x1080.jpg",
+                        "width": 1080,
+                        "height": 1080
+                    },
+                    {
+                        "url": "https://resources.tidal.com/images/e6f813d8/a0a4/4d34/b253/9ec34e78ad22/1280x1280.jpg",
+                        "width": 1280,
+                        "height": 1280
+                    },
+                    {
+                        "url": "https://resources.tidal.com/images/e6f813d8/a0a4/4d34/b253/9ec34e78ad22/160x160.jpg",
+                        "width": 160,
+                        "height": 160
+                    },
+                    {
+                        "url": "https://resources.tidal.com/images/e6f813d8/a0a4/4d34/b253/9ec34e78ad22/320x320.jpg",
+                        "width": 320,
+                        "height": 320
+                    },
+                    {
+                        "url": "https://resources.tidal.com/images/e6f813d8/a0a4/4d34/b253/9ec34e78ad22/640x640.jpg",
+                        "width": 640,
+                        "height": 640
+                    },
+                    {
+                        "url": "https://resources.tidal.com/images/e6f813d8/a0a4/4d34/b253/9ec34e78ad22/750x750.jpg",
+                        "width": 750,
+                        "height": 750
+                    },
+                    {
+                        "url": "https://resources.tidal.com/images/e6f813d8/a0a4/4d34/b253/9ec34e78ad22/80x80.jpg",
+                        "width": 80,
+                        "height": 80
+                    }
+                ],
+                "videoCover": [],
+                "numberOfVolumes": 1,
+                "numberOfTracks": 1,
+                "numberOfVideos": 0,
+                "type": "SINGLE",
+                "copyright": "(C) 2022 Smithsonian Folkways Recordings",
+                "mediaMetadata": {
+                    "tags": [
+                        "LOSSLESS"
+                    ]
+                },
+                "properties": {},
+                "tidalUrl": "https://tidal.com/browse/album/217339487"
+            },
+            "id": "217339487",
+            "status": 200,
+            "message": "success"
+        },
+        {
+            "resource": {
+                "id": "217225166",
+                "barcodeId": "093075610151",
+                "title": "First Landing: Descent (Excerpt)",
+                "artists": [
+                    {
+                        "id": "5907",
+                        "name": "Kronos Quartet",
+                        "picture": [
+                            {
+                                "url": "https://resources.tidal.com/images/f158b1a2/23b3/4f26/a09f/2f6ffcfdf275/1024x256.jpg",
+                                "width": 1024,
+                                "height": 256
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/f158b1a2/23b3/4f26/a09f/2f6ffcfdf275/1080x720.jpg",
+                                "width": 1080,
+                                "height": 720
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/f158b1a2/23b3/4f26/a09f/2f6ffcfdf275/160x107.jpg",
+                                "width": 160,
+                                "height": 107
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/f158b1a2/23b3/4f26/a09f/2f6ffcfdf275/160x160.jpg",
+                                "width": 160,
+                                "height": 160
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/f158b1a2/23b3/4f26/a09f/2f6ffcfdf275/320x214.jpg",
+                                "width": 320,
+                                "height": 214
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/f158b1a2/23b3/4f26/a09f/2f6ffcfdf275/320x320.jpg",
+                                "width": 320,
+                                "height": 320
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/f158b1a2/23b3/4f26/a09f/2f6ffcfdf275/480x480.jpg",
+                                "width": 480,
+                                "height": 480
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/f158b1a2/23b3/4f26/a09f/2f6ffcfdf275/640x428.jpg",
+                                "width": 640,
+                                "height": 428
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/f158b1a2/23b3/4f26/a09f/2f6ffcfdf275/750x500.jpg",
+                                "width": 750,
+                                "height": 500
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/f158b1a2/23b3/4f26/a09f/2f6ffcfdf275/750x750.jpg",
+                                "width": 750,
+                                "height": 750
+                            }
+                        ],
+                        "main": true
+                    },
+                    {
+                        "id": "4184479",
+                        "name": "Rinde Eckert",
+                        "picture": [
+                            {
+                                "url": "https://resources.tidal.com/images/186a89b0/d0f6/4b5c/b4c0/cb2dffe1e9a2/1024x256.jpg",
+                                "width": 1024,
+                                "height": 256
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/186a89b0/d0f6/4b5c/b4c0/cb2dffe1e9a2/1080x720.jpg",
+                                "width": 1080,
+                                "height": 720
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/186a89b0/d0f6/4b5c/b4c0/cb2dffe1e9a2/160x107.jpg",
+                                "width": 160,
+                                "height": 107
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/186a89b0/d0f6/4b5c/b4c0/cb2dffe1e9a2/160x160.jpg",
+                                "width": 160,
+                                "height": 160
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/186a89b0/d0f6/4b5c/b4c0/cb2dffe1e9a2/320x214.jpg",
+                                "width": 320,
+                                "height": 214
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/186a89b0/d0f6/4b5c/b4c0/cb2dffe1e9a2/320x320.jpg",
+                                "width": 320,
+                                "height": 320
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/186a89b0/d0f6/4b5c/b4c0/cb2dffe1e9a2/480x480.jpg",
+                                "width": 480,
+                                "height": 480
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/186a89b0/d0f6/4b5c/b4c0/cb2dffe1e9a2/640x428.jpg",
+                                "width": 640,
+                                "height": 428
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/186a89b0/d0f6/4b5c/b4c0/cb2dffe1e9a2/750x500.jpg",
+                                "width": 750,
+                                "height": 500
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/186a89b0/d0f6/4b5c/b4c0/cb2dffe1e9a2/750x750.jpg",
+                                "width": 750,
+                                "height": 750
+                            }
+                        ],
+                        "main": true
+                    },
+                    {
+                        "id": "26244578",
+                        "name": "Vân-Ánh Vanessa Võ",
+                        "picture": [],
+                        "main": true
+                    }
+                ],
+                "duration": 209,
+                "releaseDate": "2022-03-16",
+                "imageCover": [
+                    {
+                        "url": "https://resources.tidal.com/images/d82c8298/dde6/43c0/82d5/2b3aeffb5726/1080x1080.jpg",
+                        "width": 1080,
+                        "height": 1080
+                    },
+                    {
+                        "url": "https://resources.tidal.com/images/d82c8298/dde6/43c0/82d5/2b3aeffb5726/1280x1280.jpg",
+                        "width": 1280,
+                        "height": 1280
+                    },
+                    {
+                        "url": "https://resources.tidal.com/images/d82c8298/dde6/43c0/82d5/2b3aeffb5726/160x160.jpg",
+                        "width": 160,
+                        "height": 160
+                    },
+                    {
+                        "url": "https://resources.tidal.com/images/d82c8298/dde6/43c0/82d5/2b3aeffb5726/320x320.jpg",
+                        "width": 320,
+                        "height": 320
+                    },
+                    {
+                        "url": "https://resources.tidal.com/images/d82c8298/dde6/43c0/82d5/2b3aeffb5726/640x640.jpg",
+                        "width": 640,
+                        "height": 640
+                    },
+                    {
+                        "url": "https://resources.tidal.com/images/d82c8298/dde6/43c0/82d5/2b3aeffb5726/750x750.jpg",
+                        "width": 750,
+                        "height": 750
+                    },
+                    {
+                        "url": "https://resources.tidal.com/images/d82c8298/dde6/43c0/82d5/2b3aeffb5726/80x80.jpg",
+                        "width": 80,
+                        "height": 80
+                    }
+                ],
+                "videoCover": [],
+                "numberOfVolumes": 1,
+                "numberOfTracks": 1,
+                "numberOfVideos": 0,
+                "type": "SINGLE",
+                "copyright": "(C) 2022 Smithsonian Folkways Recordings",
+                "mediaMetadata": {
+                    "tags": [
+                        "LOSSLESS"
+                    ]
+                },
+                "properties": {
+                    "content": [
+                        "explicit"
+                    ]
+                },
+                "tidalUrl": "https://tidal.com/browse/album/217225166"
+            },
+            "id": "217225166",
+            "status": 200,
+            "message": "success"
+        },
+        {
+            "resource": {
+                "id": "200307862",
+                "barcodeId": "196292716306",
+                "title": "Vaya Vaya",
+                "artists": [
+                    {
+                        "id": "5907",
+                        "name": "Kronos Quartet",
+                        "picture": [
+                            {
+                                "url": "https://resources.tidal.com/images/f158b1a2/23b3/4f26/a09f/2f6ffcfdf275/1024x256.jpg",
+                                "width": 1024,
+                                "height": 256
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/f158b1a2/23b3/4f26/a09f/2f6ffcfdf275/1080x720.jpg",
+                                "width": 1080,
+                                "height": 720
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/f158b1a2/23b3/4f26/a09f/2f6ffcfdf275/160x107.jpg",
+                                "width": 160,
+                                "height": 107
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/f158b1a2/23b3/4f26/a09f/2f6ffcfdf275/160x160.jpg",
+                                "width": 160,
+                                "height": 160
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/f158b1a2/23b3/4f26/a09f/2f6ffcfdf275/320x214.jpg",
+                                "width": 320,
+                                "height": 214
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/f158b1a2/23b3/4f26/a09f/2f6ffcfdf275/320x320.jpg",
+                                "width": 320,
+                                "height": 320
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/f158b1a2/23b3/4f26/a09f/2f6ffcfdf275/480x480.jpg",
+                                "width": 480,
+                                "height": 480
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/f158b1a2/23b3/4f26/a09f/2f6ffcfdf275/640x428.jpg",
+                                "width": 640,
+                                "height": 428
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/f158b1a2/23b3/4f26/a09f/2f6ffcfdf275/750x500.jpg",
+                                "width": 750,
+                                "height": 500
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/f158b1a2/23b3/4f26/a09f/2f6ffcfdf275/750x750.jpg",
+                                "width": 750,
+                                "height": 750
+                            }
+                        ],
+                        "main": true
+                    },
+                    {
+                        "id": "3670679",
+                        "name": "Mahsa Vahdat",
+                        "picture": [
+                            {
+                                "url": "https://resources.tidal.com/images/05c50f45/be32/401f/a9a0/7b74df51e910/1024x256.jpg",
+                                "width": 1024,
+                                "height": 256
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/05c50f45/be32/401f/a9a0/7b74df51e910/1080x720.jpg",
+                                "width": 1080,
+                                "height": 720
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/05c50f45/be32/401f/a9a0/7b74df51e910/160x107.jpg",
+                                "width": 160,
+                                "height": 107
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/05c50f45/be32/401f/a9a0/7b74df51e910/160x160.jpg",
+                                "width": 160,
+                                "height": 160
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/05c50f45/be32/401f/a9a0/7b74df51e910/320x214.jpg",
+                                "width": 320,
+                                "height": 214
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/05c50f45/be32/401f/a9a0/7b74df51e910/320x320.jpg",
+                                "width": 320,
+                                "height": 320
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/05c50f45/be32/401f/a9a0/7b74df51e910/480x480.jpg",
+                                "width": 480,
+                                "height": 480
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/05c50f45/be32/401f/a9a0/7b74df51e910/640x428.jpg",
+                                "width": 640,
+                                "height": 428
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/05c50f45/be32/401f/a9a0/7b74df51e910/750x500.jpg",
+                                "width": 750,
+                                "height": 500
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/05c50f45/be32/401f/a9a0/7b74df51e910/750x750.jpg",
+                                "width": 750,
+                                "height": 750
+                            }
+                        ],
+                        "main": true
+                    }
+                ],
+                "duration": 245,
+                "releaseDate": "2021-10-22",
+                "imageCover": [
+                    {
+                        "url": "https://resources.tidal.com/images/b2376a88/5c64/4350/a5b7/68d826beca6e/1080x1080.jpg",
+                        "width": 1080,
+                        "height": 1080
+                    },
+                    {
+                        "url": "https://resources.tidal.com/images/b2376a88/5c64/4350/a5b7/68d826beca6e/1280x1280.jpg",
+                        "width": 1280,
+                        "height": 1280
+                    },
+                    {
+                        "url": "https://resources.tidal.com/images/b2376a88/5c64/4350/a5b7/68d826beca6e/160x160.jpg",
+                        "width": 160,
+                        "height": 160
+                    },
+                    {
+                        "url": "https://resources.tidal.com/images/b2376a88/5c64/4350/a5b7/68d826beca6e/320x320.jpg",
+                        "width": 320,
+                        "height": 320
+                    },
+                    {
+                        "url": "https://resources.tidal.com/images/b2376a88/5c64/4350/a5b7/68d826beca6e/640x640.jpg",
+                        "width": 640,
+                        "height": 640
+                    },
+                    {
+                        "url": "https://resources.tidal.com/images/b2376a88/5c64/4350/a5b7/68d826beca6e/750x750.jpg",
+                        "width": 750,
+                        "height": 750
+                    },
+                    {
+                        "url": "https://resources.tidal.com/images/b2376a88/5c64/4350/a5b7/68d826beca6e/80x80.jpg",
+                        "width": 80,
+                        "height": 80
+                    }
+                ],
+                "videoCover": [],
+                "numberOfVolumes": 1,
+                "numberOfTracks": 1,
+                "numberOfVideos": 0,
+                "type": "SINGLE",
+                "copyright": "(C) 2021 Kirkelig Kulturverksted",
+                "mediaMetadata": {
+                    "tags": [
+                        "HIRES_LOSSLESS",
+                        "LOSSLESS"
+                    ]
+                },
+                "properties": {},
+                "tidalUrl": "https://tidal.com/browse/album/200307862"
+            },
+            "id": "200307862",
+            "status": 200,
+            "message": "success"
+        }
+    ],
+    "metadata": {
+        "total": 103
+    }
+}

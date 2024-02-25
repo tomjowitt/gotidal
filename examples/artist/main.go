@@ -20,7 +20,7 @@ func main() {
 	}
 
 	log.Println("-------------------------------------------------")
-	log.Println("Single Artist")
+	log.Println("Single artist")
 	log.Println(" ")
 
 	artist, err := client.GetSingleArtist(ctx, "5907")
@@ -29,4 +29,17 @@ func main() {
 	}
 
 	log.Printf("%s - %s", artist.Name, artist.URL)
+
+	log.Println("-------------------------------------------------")
+	log.Println("Get albums for an artist")
+	log.Println(" ")
+
+	albums, err := client.GetAlbumsByArtist(ctx, "5907", gotidal.PaginationParams{Limit: 5})
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	for _, album := range albums {
+		log.Printf("%s - %s", album.Title, album.Artists[0].Name)
+	}
 }
