@@ -42,4 +42,17 @@ func main() {
 	for _, album := range albums {
 		log.Printf("%s - %s", album.Title, album.Artists[0].Name)
 	}
+
+	log.Println("-------------------------------------------------")
+	log.Println("Get multiple artists")
+	log.Println(" ")
+
+	artists, err := client.GetMultipleArtists(ctx, []string{"5907", "3502119", "31874"})
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	for _, artist := range artists {
+		log.Printf("%s - %s", artist.Name, artist.URL)
+	}
 }

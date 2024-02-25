@@ -1,0 +1,195 @@
+{
+    "data": [
+        {
+            "resource": {
+                "id": "5907",
+                "name": "Kronos Quartet",
+                "picture": [
+                    {
+                        "url": "https://resources.tidal.com/images/f158b1a2/23b3/4f26/a09f/2f6ffcfdf275/1024x256.jpg",
+                        "width": 1024,
+                        "height": 256
+                    },
+                    {
+                        "url": "https://resources.tidal.com/images/f158b1a2/23b3/4f26/a09f/2f6ffcfdf275/1080x720.jpg",
+                        "width": 1080,
+                        "height": 720
+                    },
+                    {
+                        "url": "https://resources.tidal.com/images/f158b1a2/23b3/4f26/a09f/2f6ffcfdf275/160x107.jpg",
+                        "width": 160,
+                        "height": 107
+                    },
+                    {
+                        "url": "https://resources.tidal.com/images/f158b1a2/23b3/4f26/a09f/2f6ffcfdf275/160x160.jpg",
+                        "width": 160,
+                        "height": 160
+                    },
+                    {
+                        "url": "https://resources.tidal.com/images/f158b1a2/23b3/4f26/a09f/2f6ffcfdf275/320x214.jpg",
+                        "width": 320,
+                        "height": 214
+                    },
+                    {
+                        "url": "https://resources.tidal.com/images/f158b1a2/23b3/4f26/a09f/2f6ffcfdf275/320x320.jpg",
+                        "width": 320,
+                        "height": 320
+                    },
+                    {
+                        "url": "https://resources.tidal.com/images/f158b1a2/23b3/4f26/a09f/2f6ffcfdf275/480x480.jpg",
+                        "width": 480,
+                        "height": 480
+                    },
+                    {
+                        "url": "https://resources.tidal.com/images/f158b1a2/23b3/4f26/a09f/2f6ffcfdf275/640x428.jpg",
+                        "width": 640,
+                        "height": 428
+                    },
+                    {
+                        "url": "https://resources.tidal.com/images/f158b1a2/23b3/4f26/a09f/2f6ffcfdf275/750x500.jpg",
+                        "width": 750,
+                        "height": 500
+                    },
+                    {
+                        "url": "https://resources.tidal.com/images/f158b1a2/23b3/4f26/a09f/2f6ffcfdf275/750x750.jpg",
+                        "width": 750,
+                        "height": 750
+                    }
+                ],
+                "tidalUrl": "https://tidal.com/browse/artist/5907"
+            },
+            "id": "5907",
+            "status": 200,
+            "message": "success"
+        },
+        {
+            "resource": {
+                "id": "3502119",
+                "name": "Entombed",
+                "picture": [
+                    {
+                        "url": "https://resources.tidal.com/images/7cb0c09e/9607/489f/8aa1/b730bddd2cb0/1024x256.jpg",
+                        "width": 1024,
+                        "height": 256
+                    },
+                    {
+                        "url": "https://resources.tidal.com/images/7cb0c09e/9607/489f/8aa1/b730bddd2cb0/1080x720.jpg",
+                        "width": 1080,
+                        "height": 720
+                    },
+                    {
+                        "url": "https://resources.tidal.com/images/7cb0c09e/9607/489f/8aa1/b730bddd2cb0/160x107.jpg",
+                        "width": 160,
+                        "height": 107
+                    },
+                    {
+                        "url": "https://resources.tidal.com/images/7cb0c09e/9607/489f/8aa1/b730bddd2cb0/160x160.jpg",
+                        "width": 160,
+                        "height": 160
+                    },
+                    {
+                        "url": "https://resources.tidal.com/images/7cb0c09e/9607/489f/8aa1/b730bddd2cb0/320x214.jpg",
+                        "width": 320,
+                        "height": 214
+                    },
+                    {
+                        "url": "https://resources.tidal.com/images/7cb0c09e/9607/489f/8aa1/b730bddd2cb0/320x320.jpg",
+                        "width": 320,
+                        "height": 320
+                    },
+                    {
+                        "url": "https://resources.tidal.com/images/7cb0c09e/9607/489f/8aa1/b730bddd2cb0/480x480.jpg",
+                        "width": 480,
+                        "height": 480
+                    },
+                    {
+                        "url": "https://resources.tidal.com/images/7cb0c09e/9607/489f/8aa1/b730bddd2cb0/640x428.jpg",
+                        "width": 640,
+                        "height": 428
+                    },
+                    {
+                        "url": "https://resources.tidal.com/images/7cb0c09e/9607/489f/8aa1/b730bddd2cb0/750x500.jpg",
+                        "width": 750,
+                        "height": 500
+                    },
+                    {
+                        "url": "https://resources.tidal.com/images/7cb0c09e/9607/489f/8aa1/b730bddd2cb0/750x750.jpg",
+                        "width": 750,
+                        "height": 750
+                    }
+                ],
+                "tidalUrl": "https://tidal.com/browse/artist/3502119"
+            },
+            "id": "3502119",
+            "status": 200,
+            "message": "success"
+        },
+        {
+            "resource": {
+                "id": "31874",
+                "name": "Karen Carpenter",
+                "picture": [
+                    {
+                        "url": "https://resources.tidal.com/images/f11382cb/ec5a/46ff/bd29/da472373b33b/1024x256.jpg",
+                        "width": 1024,
+                        "height": 256
+                    },
+                    {
+                        "url": "https://resources.tidal.com/images/f11382cb/ec5a/46ff/bd29/da472373b33b/1080x720.jpg",
+                        "width": 1080,
+                        "height": 720
+                    },
+                    {
+                        "url": "https://resources.tidal.com/images/f11382cb/ec5a/46ff/bd29/da472373b33b/160x107.jpg",
+                        "width": 160,
+                        "height": 107
+                    },
+                    {
+                        "url": "https://resources.tidal.com/images/f11382cb/ec5a/46ff/bd29/da472373b33b/160x160.jpg",
+                        "width": 160,
+                        "height": 160
+                    },
+                    {
+                        "url": "https://resources.tidal.com/images/f11382cb/ec5a/46ff/bd29/da472373b33b/320x214.jpg",
+                        "width": 320,
+                        "height": 214
+                    },
+                    {
+                        "url": "https://resources.tidal.com/images/f11382cb/ec5a/46ff/bd29/da472373b33b/320x320.jpg",
+                        "width": 320,
+                        "height": 320
+                    },
+                    {
+                        "url": "https://resources.tidal.com/images/f11382cb/ec5a/46ff/bd29/da472373b33b/480x480.jpg",
+                        "width": 480,
+                        "height": 480
+                    },
+                    {
+                        "url": "https://resources.tidal.com/images/f11382cb/ec5a/46ff/bd29/da472373b33b/640x428.jpg",
+                        "width": 640,
+                        "height": 428
+                    },
+                    {
+                        "url": "https://resources.tidal.com/images/f11382cb/ec5a/46ff/bd29/da472373b33b/750x500.jpg",
+                        "width": 750,
+                        "height": 500
+                    },
+                    {
+                        "url": "https://resources.tidal.com/images/f11382cb/ec5a/46ff/bd29/da472373b33b/750x750.jpg",
+                        "width": 750,
+                        "height": 750
+                    }
+                ],
+                "tidalUrl": "https://tidal.com/browse/artist/31874"
+            },
+            "id": "31874",
+            "status": 200,
+            "message": "success"
+        }
+    ],
+    "metadata": {
+        "requested": 3,
+        "success": 3,
+        "failure": 0
+    }
+}
