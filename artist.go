@@ -40,3 +40,24 @@ func (c *Client) GetSingleArtist(ctx context.Context, id string) (*Artist, error
 
 	return &result, nil
 }
+
+// GetAlbumsByArtist returns a paginated list of albums for an artist.
+func (c *Client) GetAlbumsByArtist(ctx context.Context, id string, params PaginationParams) ([]Album, error) {
+	if id == "" {
+		return nil, ErrMissingRequiredParameters
+	}
+
+	response, err := c.request(ctx, http.MethodGet, concat("/artists/", id, "/albums"), params)
+	if err != nil {
+		return nil, fmt.Errorf("failed to connect to the artist albums endpoint: %w", err)
+	}
+
+	var results albumResults
+
+	err = json.Unmarshal(response, &results)
+	if err != nil {
+		return nil, fmt.Errorf("failed to unmarshal the artist albums response body: %w", err)
+	}
+
+	return results.Data, nil
+}

@@ -73,3 +73,53 @@ func TestGetSingleArtist(t *testing.T) {
 		})
 	}
 }
+
+func TestGetAlbumsByArtist(t *testing.T) {
+	t.Parallel()
+
+	type args struct {
+		httpClient HTTPClient
+		id         string
+	}
+
+	type expected struct {
+		AlbumCount int
+	}
+
+	tests := []struct {
+		name     string
+		args     args
+		expected expected
+		wantErr  bool
+	}{
+		{
+			"Artist albums parses correctly",
+			args{
+				httpClient: &mockHTTPClient{FilePath: "testdata/albums-by-artist.json", StatusCode: http.StatusOK},
+				id:         "5907",
+			},
+			expected{
+				AlbumCount: 10,
+			},
+			false,
+		},
+	}
+	for _, tt := range tests {
+		tt := tt
+		t.Run(tt.name, func(t *testing.T) {
+			t.Parallel()
+
+			client := &Client{httpClient: tt.args.httpClient}
+
+			albums, err := client.GetAlbumsByArtist(context.Background(), tt.args.id, PaginationParams{Limit: 10})
+			if (err != nil) != tt.wantErr {
+				t.Errorf("Client.GetAlbumsByArtist() error = %v, wantErr %v", err, tt.wantErr)
+				return
+			}
+
+			if len(albums) != tt.expected.AlbumCount {
+				t.Errorf("Client.GetAlbumsByArtist() AlbumCount = %v, want %v", len(albums), tt.expected.AlbumCount)
+			}
+		})
+	}
+}
