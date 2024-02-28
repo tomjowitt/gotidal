@@ -2,7 +2,7 @@ name: go test
 
 on:
   pull_request:
-    types: [opened, closed]
+    types: [opened, synchronize, closed]
     branches:
       - main
 
