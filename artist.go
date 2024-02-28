@@ -91,3 +91,36 @@ func (c *Client) GetMultipleArtists(ctx context.Context, ids []string) ([]Artist
 
 	return results.Data, nil
 }
+
+type similarArtist struct {
+	Resource struct {
+		ID string `json:"id"`
+	}
+}
+
+type similarArtistResults struct {
+	Data     []similarArtist `json:"data"`
+	MetaData ItemMetaData    `json:"metadata"`
+}
+
+// GetSimilarArtists returns a slice of artist IDs that can be used as a parameter in the GetMultipleArtists function.
+func (c *Client) GetSimilarArtists(ctx context.Context, id string, params PaginationParams) ([]string, error) {
+	response, err := c.request(ctx, http.MethodGet, concat("/artists/", id, "/similar"), params)
+	if err != nil {
+		return nil, fmt.Errorf("failed to connect to the similar artists endpoint: %w", err)
+	}
+
+	var results similarArtistResults
+
+	err = json.Unmarshal(response, &results)
+	if err != nil {
+		return nil, fmt.Errorf("failed to unmarshal the similar artists response body: %w", err)
+	}
+
+	var artistIDs []string
+	for _, artistID := range results.Data {
+		artistIDs = append(artistIDs, artistID.Resource.ID)
+	}
+
+	return artistIDs, nil
+}

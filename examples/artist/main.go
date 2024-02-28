@@ -55,4 +55,22 @@ func main() {
 	for _, artist := range artists {
 		log.Printf("%s - %s", artist.Name, artist.URL)
 	}
+
+	log.Println("-------------------------------------------------")
+	log.Println("Get similar artists to Square Pusher")
+	log.Println(" ")
+
+	similarIDs, err := client.GetSimilarArtists(ctx, "3566512", gotidal.PaginationParams{Limit: 5})
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	similarArtists, err := client.GetMultipleArtists(ctx, similarIDs)
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	for _, item := range similarArtists {
+		log.Printf("%s - %s", item.Name, item.URL)
+	}
 }
