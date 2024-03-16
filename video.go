@@ -10,7 +10,7 @@ type videoResource struct {
 	Title        string           `json:"title"`
 	Version      string           `json:"version"`
 	Images       []Image          `json:"image"`
-	Album        albumResource    `json:"album"`
+	Album        AlbumResource    `json:"album"`
 	ReleaseDate  string           `json:"releaseDate"`
 	Artists      []artistResource `json:"artists"`
 	Duration     int              `json:"duration"`

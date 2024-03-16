@@ -211,3 +211,65 @@ func TestGetAlbumTracks(t *testing.T) {
 		})
 	}
 }
+
+func TestGetSingleTrack(t *testing.T) {
+	t.Parallel()
+
+	type args struct {
+		httpClient HTTPClient
+		id         string
+	}
+
+	type expected struct {
+		artist string
+		title  string
+		isrc   string
+	}
+
+	tests := []struct {
+		name     string
+		args     args
+		expected expected
+	}{
+		{
+			"Count of album tracks",
+			args{
+				httpClient: &mockHTTPClient{FilePath: "testdata/single-track.json", StatusCode: http.StatusOK},
+				id:         "51584179",
+			},
+			expected{
+				artist: "New Order",
+				title:  "Age of Consent (2015 Remaster)",
+				isrc:   "GBAAP1500379",
+			},
+		},
+	}
+	for _, tt := range tests {
+		tt := tt
+		t.Run(tt.name, func(t *testing.T) {
+			t.Parallel()
+
+			c := &Client{
+				httpClient: tt.args.httpClient,
+			}
+
+			track, err := c.GetSingleTrack(context.Background(), tt.args.id)
+			if err != nil {
+				t.Errorf("Client.GetSingleTrack() error = %v", err)
+				return
+			}
+
+			if track.Artists[0].Name != tt.expected.artist {
+				t.Errorf("Client.GetSingleTrack() track artist = %v, want %v", track.Artists[0].Name, tt.expected.artist)
+			}
+
+			if track.Title != tt.expected.title {
+				t.Errorf("Client.GetSingleTrack() track title = %v, want %v", track.Title, tt.expected.title)
+			}
+
+			if track.ISRC != tt.expected.isrc {
+				t.Errorf("Client.GetSingleTrack() track isrc = %v, want %v", track.ISRC, tt.expected.isrc)
+			}
+		})
+	}
+}

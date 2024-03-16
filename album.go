@@ -4,16 +4,17 @@ import (
 	"context"
 	"encoding/json"
 	"fmt"
+	"log"
 	"net/http"
 	"strings"
 )
 
 // Album represents an individual release.
 type Album struct {
-	albumResource `json:"resource"`
+	AlbumResource `json:"resource"`
 }
 
-type albumResource struct {
+type AlbumResource struct {
 	ID              string           `json:"id"`
 	BarcodeID       string           `json:"barcodeID"`
 	Title           string           `json:"title"`
@@ -52,19 +53,20 @@ type Track struct {
 }
 
 type trackResource struct {
-	ID            string          `json:"id"`
-	Title         string          `json:"title"`
-	ISRC          string          `json:"isrc"`
-	Copyright     string          `json:"copyright"`
-	Version       string          `json:"version"`
-	Artists       []Artist        `json:"artists"`
-	Album         albumResource   `json:"album"`
-	TrackNumber   int             `json:"trackNumber"`
-	VolumeNumber  int             `json:"volumeNumber"`
-	MediaMetaData MediaMetaData   `json:"mediaMetadata"`
-	Properties    AlbumProperties `json:"properties"`
-	TidalURL      string          `json:"tidalUrl"`
-	ProviderInfo  ProviderInfo    `json:"providerInfo"`
+	ID            string           `json:"id"`
+	ArtifactType  string           `json:"artifactType"`
+	Title         string           `json:"title"`
+	ISRC          string           `json:"isrc"`
+	Copyright     string           `json:"copyright"`
+	Version       string           `json:"version"`
+	Artists       []artistResource `json:"artists"`
+	Album         AlbumResource    `json:"album"`
+	TrackNumber   int              `json:"trackNumber"`
+	VolumeNumber  int              `json:"volumeNumber"`
+	MediaMetaData MediaMetaData    `json:"mediaMetadata"`
+	Properties    AlbumProperties  `json:"properties"`
+	TidalURL      string           `json:"tidalUrl"`
+	ProviderInfo  ProviderInfo     `json:"providerInfo"`
 }
 
 type albumResults struct {
@@ -234,4 +236,22 @@ func (c *Client) GetSimilarAlbums(ctx context.Context, id string, params Paginat
 	}
 
 	return albumIDs, nil
+}
+
+func (c *Client) GetSingleTrack(ctx context.Context, id string) (*Track, error) {
+	response, err := c.request(ctx, http.MethodGet, concat("/tracks/", id), nil)
+	if err != nil {
+		return nil, fmt.Errorf("failed to connect to the tracks endpoint: %w", err)
+	}
+
+	var result Track
+
+	err = json.Unmarshal(response, &result)
+	if err != nil {
+		return nil, fmt.Errorf("failed to unmarshal the tracks response body: %w", err)
+	}
+
+	log.Println(result.Artists)
+
+	return &result, nil
 }
