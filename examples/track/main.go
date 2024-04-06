@@ -29,4 +29,17 @@ func main() {
 	log.Println("-------------------------------------------------")
 
 	log.Printf("%s - %s", track.Title, track.Artists[0].Name)
+
+	tracks, err := client.GetTracksByISRC(ctx, "GBBLY1600675", gotidal.PaginationParams{Limit: 5})
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	log.Println("-------------------------------------------------")
+	log.Println("Tracks By ISRC")
+	log.Println("-------------------------------------------------")
+
+	for _, track := range tracks {
+		log.Printf("%s - %s - %s", track.Title, track.Artists[0].Name, track.Album.Title)
+	}
 }

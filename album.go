@@ -4,7 +4,6 @@ import (
 	"context"
 	"encoding/json"
 	"fmt"
-	"log"
 	"net/http"
 	"strings"
 )
@@ -34,14 +33,17 @@ type AlbumResource struct {
 	ProviderInfo    ProviderInfo     `json:"providerInfo"`
 }
 
+// MediaMetaData represents the metadata of an album.
 type MediaMetaData struct {
 	Tags []string `json:"tags"`
 }
 
+// AlbumProperties represents the properties of an album.
 type AlbumProperties struct {
 	Content []string `json:"content"`
 }
 
+// ProviderInfo represents the provider of an album.
 type ProviderInfo struct {
 	ID   string `json:"providerId"`
 	Name string `json:"providerName"`
@@ -238,6 +240,7 @@ func (c *Client) GetSimilarAlbums(ctx context.Context, id string, params Paginat
 	return albumIDs, nil
 }
 
+// GetAlbumsByArtist returns a list of albums that match an artist ID.
 func (c *Client) GetSingleTrack(ctx context.Context, id string) (*Track, error) {
 	response, err := c.request(ctx, http.MethodGet, concat("/tracks/", id), nil)
 	if err != nil {
@@ -251,7 +254,35 @@ func (c *Client) GetSingleTrack(ctx context.Context, id string) (*Track, error) 
 		return nil, fmt.Errorf("failed to unmarshal the tracks response body: %w", err)
 	}
 
-	log.Println(result.Artists)
-
 	return &result, nil
+}
+
+// GetTracksByISRC returns a list of tracks that match an ISRC.
+//
+// ISRC lookup can be found here. This is a useful tool for finding ISRCs for testing purposes:
+// https://isrcsearch.ifpi.org/
+func (c *Client) GetTracksByISRC(ctx context.Context, isrc string, params PaginationParams) ([]Track, error) {
+	type isrcParams struct {
+		isrc   string
+		Limit  int
+		Offset int
+	}
+
+	response, err := c.request(ctx, http.MethodGet, "/tracks/byIsrc", isrcParams{
+		isrc:   isrc,
+		Limit:  params.Limit,
+		Offset: params.Offset,
+	})
+	if err != nil {
+		return nil, fmt.Errorf("failed to connect to the tracks endpoint: %w", err)
+	}
+
+	var result trackResults
+
+	err = json.Unmarshal(response, &result)
+	if err != nil {
+		return nil, fmt.Errorf("failed to unmarshal the tracks response body: %w", err)
+	}
+
+	return result.Data, nil
 }

@@ -273,3 +273,53 @@ func TestGetSingleTrack(t *testing.T) {
 		})
 	}
 }
+
+func TestGetTracksByISRC(t *testing.T) {
+	t.Parallel()
+
+	type args struct {
+		httpClient HTTPClient
+		id         string
+	}
+
+	type expected struct {
+		count int
+	}
+
+	tests := []struct {
+		name     string
+		args     args
+		expected expected
+	}{
+		{
+			"Count of tracks by ISRC",
+			args{
+				httpClient: &mockHTTPClient{FilePath: "testdata/tracks-by-isrc.json", StatusCode: http.StatusOK},
+				id:         "51584179",
+			},
+			expected{
+				count: 2,
+			},
+		},
+	}
+	for _, tt := range tests {
+		tt := tt
+		t.Run(tt.name, func(t *testing.T) {
+			t.Parallel()
+
+			c := &Client{
+				httpClient: tt.args.httpClient,
+			}
+
+			tracks, err := c.GetTracksByISRC(context.Background(), tt.args.id, PaginationParams{Limit: 5})
+			if err != nil {
+				t.Errorf("Client.GetTracksByISRC() error = %v", err)
+				return
+			}
+
+			if len(tracks) != tt.expected.count {
+				t.Errorf("Client.GetTracksByISRC() artist count %v, want %v", len(tracks), tt.expected.count)
+			}
+		})
+	}
+}
