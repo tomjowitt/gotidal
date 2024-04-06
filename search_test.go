@@ -31,6 +31,7 @@ func TestClient_Search(t *testing.T) {
 		tt := tt
 		t.Run(tt.name, func(t *testing.T) {
 			t.Parallel()
+
 			c := &Client{}
 			_, err := c.Search(context.Background(), tt.args.params)
 
