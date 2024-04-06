@@ -1,0 +1,257 @@
+{
+    "data": [
+        {
+            "resource": {
+                "artifactType": "track",
+                "id": "120259174",
+                "title": "King of the World",
+                "artists": [
+                    {
+                        "id": "9363",
+                        "name": "Hawkwind",
+                        "picture": [
+                            {
+                                "url": "https://resources.tidal.com/images/6a6fa2f4/e89a/4432/8015/cef7b5615965/1024x256.jpg",
+                                "width": 1024,
+                                "height": 256
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/6a6fa2f4/e89a/4432/8015/cef7b5615965/1080x720.jpg",
+                                "width": 1080,
+                                "height": 720
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/6a6fa2f4/e89a/4432/8015/cef7b5615965/160x107.jpg",
+                                "width": 160,
+                                "height": 107
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/6a6fa2f4/e89a/4432/8015/cef7b5615965/160x160.jpg",
+                                "width": 160,
+                                "height": 160
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/6a6fa2f4/e89a/4432/8015/cef7b5615965/320x214.jpg",
+                                "width": 320,
+                                "height": 214
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/6a6fa2f4/e89a/4432/8015/cef7b5615965/320x320.jpg",
+                                "width": 320,
+                                "height": 320
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/6a6fa2f4/e89a/4432/8015/cef7b5615965/480x480.jpg",
+                                "width": 480,
+                                "height": 480
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/6a6fa2f4/e89a/4432/8015/cef7b5615965/640x428.jpg",
+                                "width": 640,
+                                "height": 428
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/6a6fa2f4/e89a/4432/8015/cef7b5615965/750x500.jpg",
+                                "width": 750,
+                                "height": 500
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/6a6fa2f4/e89a/4432/8015/cef7b5615965/750x750.jpg",
+                                "width": 750,
+                                "height": 750
+                            }
+                        ],
+                        "main": true
+                    }
+                ],
+                "album": {
+                    "id": "120259170",
+                    "title": "The Machine Stops",
+                    "imageCover": [
+                        {
+                            "url": "https://resources.tidal.com/images/9dfdef25/b18c/4323/9368/e42cf1a007a7/1080x1080.jpg",
+                            "width": 1080,
+                            "height": 1080
+                        },
+                        {
+                            "url": "https://resources.tidal.com/images/9dfdef25/b18c/4323/9368/e42cf1a007a7/1280x1280.jpg",
+                            "width": 1280,
+                            "height": 1280
+                        },
+                        {
+                            "url": "https://resources.tidal.com/images/9dfdef25/b18c/4323/9368/e42cf1a007a7/160x160.jpg",
+                            "width": 160,
+                            "height": 160
+                        },
+                        {
+                            "url": "https://resources.tidal.com/images/9dfdef25/b18c/4323/9368/e42cf1a007a7/320x320.jpg",
+                            "width": 320,
+                            "height": 320
+                        },
+                        {
+                            "url": "https://resources.tidal.com/images/9dfdef25/b18c/4323/9368/e42cf1a007a7/640x640.jpg",
+                            "width": 640,
+                            "height": 640
+                        },
+                        {
+                            "url": "https://resources.tidal.com/images/9dfdef25/b18c/4323/9368/e42cf1a007a7/750x750.jpg",
+                            "width": 750,
+                            "height": 750
+                        },
+                        {
+                            "url": "https://resources.tidal.com/images/9dfdef25/b18c/4323/9368/e42cf1a007a7/80x80.jpg",
+                            "width": 80,
+                            "height": 80
+                        }
+                    ],
+                    "videoCover": []
+                },
+                "duration": 171,
+                "trackNumber": 4,
+                "volumeNumber": 1,
+                "isrc": "GBBLY1600675",
+                "copyright": "℗ 2016 Cherry Red Records",
+                "mediaMetadata": {
+                    "tags": [
+                        "LOSSLESS",
+                        "MQA"
+                    ]
+                },
+                "properties": {},
+                "tidalUrl": "https://tidal.com/browse/track/120259174"
+            },
+            "id": "120259174",
+            "status": 200,
+            "message": "success"
+        },
+        {
+            "resource": {
+                "artifactType": "track",
+                "id": "122285653",
+                "title": "King of the World",
+                "artists": [
+                    {
+                        "id": "9363",
+                        "name": "Hawkwind",
+                        "picture": [
+                            {
+                                "url": "https://resources.tidal.com/images/6a6fa2f4/e89a/4432/8015/cef7b5615965/1024x256.jpg",
+                                "width": 1024,
+                                "height": 256
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/6a6fa2f4/e89a/4432/8015/cef7b5615965/1080x720.jpg",
+                                "width": 1080,
+                                "height": 720
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/6a6fa2f4/e89a/4432/8015/cef7b5615965/160x107.jpg",
+                                "width": 160,
+                                "height": 107
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/6a6fa2f4/e89a/4432/8015/cef7b5615965/160x160.jpg",
+                                "width": 160,
+                                "height": 160
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/6a6fa2f4/e89a/4432/8015/cef7b5615965/320x214.jpg",
+                                "width": 320,
+                                "height": 214
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/6a6fa2f4/e89a/4432/8015/cef7b5615965/320x320.jpg",
+                                "width": 320,
+                                "height": 320
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/6a6fa2f4/e89a/4432/8015/cef7b5615965/480x480.jpg",
+                                "width": 480,
+                                "height": 480
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/6a6fa2f4/e89a/4432/8015/cef7b5615965/640x428.jpg",
+                                "width": 640,
+                                "height": 428
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/6a6fa2f4/e89a/4432/8015/cef7b5615965/750x500.jpg",
+                                "width": 750,
+                                "height": 500
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/6a6fa2f4/e89a/4432/8015/cef7b5615965/750x750.jpg",
+                                "width": 750,
+                                "height": 750
+                            }
+                        ],
+                        "main": true
+                    }
+                ],
+                "album": {
+                    "id": "122285646",
+                    "title": "The Machine Stops",
+                    "imageCover": [
+                        {
+                            "url": "https://resources.tidal.com/images/efd84fd1/0469/464a/8d71/3dcb747336a8/1080x1080.jpg",
+                            "width": 1080,
+                            "height": 1080
+                        },
+                        {
+                            "url": "https://resources.tidal.com/images/efd84fd1/0469/464a/8d71/3dcb747336a8/1280x1280.jpg",
+                            "width": 1280,
+                            "height": 1280
+                        },
+                        {
+                            "url": "https://resources.tidal.com/images/efd84fd1/0469/464a/8d71/3dcb747336a8/160x160.jpg",
+                            "width": 160,
+                            "height": 160
+                        },
+                        {
+                            "url": "https://resources.tidal.com/images/efd84fd1/0469/464a/8d71/3dcb747336a8/320x320.jpg",
+                            "width": 320,
+                            "height": 320
+                        },
+                        {
+                            "url": "https://resources.tidal.com/images/efd84fd1/0469/464a/8d71/3dcb747336a8/640x640.jpg",
+                            "width": 640,
+                            "height": 640
+                        },
+                        {
+                            "url": "https://resources.tidal.com/images/efd84fd1/0469/464a/8d71/3dcb747336a8/750x750.jpg",
+                            "width": 750,
+                            "height": 750
+                        },
+                        {
+                            "url": "https://resources.tidal.com/images/efd84fd1/0469/464a/8d71/3dcb747336a8/80x80.jpg",
+                            "width": 80,
+                            "height": 80
+                        }
+                    ],
+                    "videoCover": []
+                },
+                "duration": 171,
+                "trackNumber": 4,
+                "volumeNumber": 1,
+                "isrc": "GBBLY1600675",
+                "copyright": "℗ 2016 Cherry Red Records",
+                "mediaMetadata": {
+                    "tags": [
+                        "LOSSLESS",
+                        "MQA"
+                    ]
+                },
+                "properties": {},
+                "tidalUrl": "https://tidal.com/browse/track/122285653"
+            },
+            "id": "122285653",
+            "status": 200,
+            "message": "success"
+        }
+    ],
+    "metadata": {
+        "requested": 2,
+        "success": 2,
+        "failure": 0
+    }
+}
