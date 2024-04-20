@@ -7,6 +7,8 @@ import (
 	"testing"
 )
 
+const countryCode = "AU"
+
 func TestGetSingleAlbum(t *testing.T) {
 	t.Parallel()
 
@@ -43,6 +45,24 @@ func TestGetSingleAlbum(t *testing.T) {
 		wantErr  bool
 	}{
 		{
+			"Token Error",
+			args{
+				httpClient: &mockHTTPClient{FilePath: "testdata/401-token-error.json", StatusCode: http.StatusUnauthorized},
+				ID:         "51584178",
+			},
+			expected{},
+			true,
+		},
+		{
+			"Missing ID",
+			args{
+				httpClient: &mockHTTPClient{FilePath: "testdata/401-token-error.json", StatusCode: http.StatusBadRequest},
+				ID:         "",
+			},
+			expected{},
+			true,
+		},
+		{
 			"Single album parses correctly",
 			args{
 				httpClient: &mockHTTPClient{FilePath: "testdata/single-album.json", StatusCode: http.StatusOK},
@@ -76,11 +96,20 @@ func TestGetSingleAlbum(t *testing.T) {
 		t.Run(tt.name, func(t *testing.T) {
 			t.Parallel()
 
-			client := &Client{httpClient: tt.args.httpClient}
+			client := &Client{httpClient: tt.args.httpClient, CountryCode: countryCode}
 
 			album, err := client.GetSingleAlbum(context.Background(), tt.args.ID)
-			if (err != nil) != tt.wantErr {
-				t.Errorf("Client.GetSingleAlbum() error = %v, wantErr %v", err, tt.wantErr)
+			if err == nil && tt.wantErr {
+				t.Error("Client.GetSingleAlbum() expected error")
+				return
+			}
+
+			if err != nil && tt.wantErr {
+				return
+			}
+
+			if err != nil && !tt.wantErr {
+				t.Errorf("Client.GetTracksByISRC() error = %v", err)
 				return
 			}
 
@@ -196,7 +225,8 @@ func TestGetAlbumTracks(t *testing.T) {
 			t.Parallel()
 
 			c := &Client{
-				httpClient: tt.args.httpClient,
+				CountryCode: countryCode,
+				httpClient:  tt.args.httpClient,
 			}
 
 			tracks, err := c.GetAlbumTracks(context.Background(), tt.args.id)
@@ -250,7 +280,8 @@ func TestGetSingleTrack(t *testing.T) {
 			t.Parallel()
 
 			c := &Client{
-				httpClient: tt.args.httpClient,
+				CountryCode: countryCode,
+				httpClient:  tt.args.httpClient,
 			}
 
 			track, err := c.GetSingleTrack(context.Background(), tt.args.id)
@@ -287,10 +318,33 @@ func TestGetTracksByISRC(t *testing.T) {
 	}
 
 	tests := []struct {
-		name     string
-		args     args
-		expected expected
+		name          string
+		args          args
+		expected      expected
+		expectedError bool
 	}{
+		{
+			"Token Error",
+			args{
+				httpClient: &mockHTTPClient{FilePath: "testdata/401-token-error.json", StatusCode: http.StatusUnauthorized},
+				id:         "51584179",
+			},
+			expected{
+				count: 0,
+			},
+			true,
+		},
+		{
+			"Bad Response",
+			args{
+				httpClient: &mockHTTPClient{FilePath: "testdata/invalid-json.json", StatusCode: http.StatusInternalServerError},
+				id:         "51584179",
+			},
+			expected{
+				count: 0,
+			},
+			true,
+		},
 		{
 			"Count of tracks by ISRC",
 			args{
@@ -300,6 +354,7 @@ func TestGetTracksByISRC(t *testing.T) {
 			expected{
 				count: 2,
 			},
+			false,
 		},
 	}
 	for _, tt := range tests {
@@ -308,17 +363,103 @@ func TestGetTracksByISRC(t *testing.T) {
 			t.Parallel()
 
 			c := &Client{
-				httpClient: tt.args.httpClient,
+				CountryCode: countryCode,
+				httpClient:  tt.args.httpClient,
 			}
 
 			tracks, err := c.GetTracksByISRC(context.Background(), tt.args.id, PaginationParams{Limit: 5})
-			if err != nil {
+			if err == nil && tt.expectedError {
+				t.Error("Client.GetTracksByISRC() expected an error", err)
+				return
+			}
+
+			if err != nil && !tt.expectedError {
 				t.Errorf("Client.GetTracksByISRC() error = %v", err)
 				return
 			}
 
 			if len(tracks) != tt.expected.count {
 				t.Errorf("Client.GetTracksByISRC() artist count %v, want %v", len(tracks), tt.expected.count)
+			}
+		})
+	}
+}
+
+func TestGetMultipleTracks(t *testing.T) {
+	t.Parallel()
+
+	type args struct {
+		httpClient HTTPClient
+		ids        string
+	}
+
+	type expected struct {
+		count int
+	}
+
+	tests := []struct {
+		name          string
+		args          args
+		expected      expected
+		expectedError bool
+	}{
+		{
+			"Token Error",
+			args{
+				httpClient: &mockHTTPClient{FilePath: "testdata/401-token-error.json", StatusCode: http.StatusUnauthorized},
+				ids:        "251380837,251380838",
+			},
+			expected{
+				count: 0,
+			},
+			true,
+		},
+		{
+			"Bad Response",
+			args{
+				httpClient: &mockHTTPClient{FilePath: "testdata/invalid-json.json", StatusCode: http.StatusInternalServerError},
+				ids:        "251380837,251380838",
+			},
+			expected{
+				count: 0,
+			},
+			true,
+		},
+		{
+			"Count of tracks by ISRC",
+			args{
+				httpClient: &mockHTTPClient{FilePath: "testdata/multiple-tracks.json", StatusCode: http.StatusOK},
+				ids:        "251380837,251380838",
+			},
+			expected{
+				count: 2,
+			},
+			false,
+		},
+	}
+	for _, tt := range tests {
+		tt := tt
+		t.Run(tt.name, func(t *testing.T) {
+			t.Parallel()
+
+			c := &Client{
+				CountryCode: countryCode,
+				httpClient:  tt.args.httpClient,
+			}
+
+			tracks, err := c.GetMultipleTracks(context.Background(), []string{})
+			if err == nil && tt.expectedError {
+				t.Error("Client.GetMultipleTracks() expected an error", err)
+				return
+			}
+
+			if err != nil && !tt.expectedError {
+				t.Errorf("Client.GetMultipleTracks() error = %v", err)
+				return
+			}
+
+			if len(tracks) != tt.expected.count {
+				t.Errorf("Client.GetMultipleTracks() artist count %v, want %v", len(tracks), tt.expected.count)
 			}
 		})
 	}

@@ -1,0 +1,263 @@
+{
+    "data": [
+        {
+            "resource": {
+                "artifactType": "track",
+                "id": "251380837",
+                "title": "I'M THAT GIRL",
+                "artists": [
+                    {
+                        "id": "1566",
+                        "name": "Beyoncé",
+                        "picture": [
+                            {
+                                "url": "https://resources.tidal.com/images/0073e74d/ccf0/41d6/855d/374fdf71e5ed/1024x256.jpg",
+                                "width": 1024,
+                                "height": 256
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/0073e74d/ccf0/41d6/855d/374fdf71e5ed/1080x720.jpg",
+                                "width": 1080,
+                                "height": 720
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/0073e74d/ccf0/41d6/855d/374fdf71e5ed/160x107.jpg",
+                                "width": 160,
+                                "height": 107
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/0073e74d/ccf0/41d6/855d/374fdf71e5ed/160x160.jpg",
+                                "width": 160,
+                                "height": 160
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/0073e74d/ccf0/41d6/855d/374fdf71e5ed/320x214.jpg",
+                                "width": 320,
+                                "height": 214
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/0073e74d/ccf0/41d6/855d/374fdf71e5ed/320x320.jpg",
+                                "width": 320,
+                                "height": 320
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/0073e74d/ccf0/41d6/855d/374fdf71e5ed/480x480.jpg",
+                                "width": 480,
+                                "height": 480
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/0073e74d/ccf0/41d6/855d/374fdf71e5ed/640x428.jpg",
+                                "width": 640,
+                                "height": 428
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/0073e74d/ccf0/41d6/855d/374fdf71e5ed/750x500.jpg",
+                                "width": 750,
+                                "height": 500
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/0073e74d/ccf0/41d6/855d/374fdf71e5ed/750x750.jpg",
+                                "width": 750,
+                                "height": 750
+                            }
+                        ],
+                        "main": true
+                    }
+                ],
+                "album": {
+                    "id": "251380836",
+                    "title": "RENAISSANCE",
+                    "imageCover": [
+                        {
+                            "url": "https://resources.tidal.com/images/d3c4372b/a652/40e0/bdb1/fc8d032708f6/1080x1080.jpg",
+                            "width": 1080,
+                            "height": 1080
+                        },
+                        {
+                            "url": "https://resources.tidal.com/images/d3c4372b/a652/40e0/bdb1/fc8d032708f6/1280x1280.jpg",
+                            "width": 1280,
+                            "height": 1280
+                        },
+                        {
+                            "url": "https://resources.tidal.com/images/d3c4372b/a652/40e0/bdb1/fc8d032708f6/160x160.jpg",
+                            "width": 160,
+                            "height": 160
+                        },
+                        {
+                            "url": "https://resources.tidal.com/images/d3c4372b/a652/40e0/bdb1/fc8d032708f6/320x320.jpg",
+                            "width": 320,
+                            "height": 320
+                        },
+                        {
+                            "url": "https://resources.tidal.com/images/d3c4372b/a652/40e0/bdb1/fc8d032708f6/640x640.jpg",
+                            "width": 640,
+                            "height": 640
+                        },
+                        {
+                            "url": "https://resources.tidal.com/images/d3c4372b/a652/40e0/bdb1/fc8d032708f6/750x750.jpg",
+                            "width": 750,
+                            "height": 750
+                        },
+                        {
+                            "url": "https://resources.tidal.com/images/d3c4372b/a652/40e0/bdb1/fc8d032708f6/80x80.jpg",
+                            "width": 80,
+                            "height": 80
+                        }
+                    ],
+                    "videoCover": []
+                },
+                "duration": 208,
+                "trackNumber": 1,
+                "volumeNumber": 1,
+                "isrc": "USSM12209515",
+                "copyright": "(P) 2022 Parkwood Entertainment LLC, under exclusive license to Columbia Records, a Division of Sony Music Entertainment",
+                "mediaMetadata": {
+                    "tags": [
+                        "DOLBY_ATMOS"
+                    ]
+                },
+                "properties": {
+                    "content": [
+                        "explicit"
+                    ]
+                },
+                "tidalUrl": "https://tidal.com/browse/track/251380837"
+            },
+            "id": "251380837",
+            "status": 200,
+            "message": "success"
+        },
+        {
+            "resource": {
+                "artifactType": "track",
+                "id": "251380838",
+                "title": "COZY",
+                "artists": [
+                    {
+                        "id": "1566",
+                        "name": "Beyoncé",
+                        "picture": [
+                            {
+                                "url": "https://resources.tidal.com/images/0073e74d/ccf0/41d6/855d/374fdf71e5ed/1024x256.jpg",
+                                "width": 1024,
+                                "height": 256
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/0073e74d/ccf0/41d6/855d/374fdf71e5ed/1080x720.jpg",
+                                "width": 1080,
+                                "height": 720
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/0073e74d/ccf0/41d6/855d/374fdf71e5ed/160x107.jpg",
+                                "width": 160,
+                                "height": 107
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/0073e74d/ccf0/41d6/855d/374fdf71e5ed/160x160.jpg",
+                                "width": 160,
+                                "height": 160
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/0073e74d/ccf0/41d6/855d/374fdf71e5ed/320x214.jpg",
+                                "width": 320,
+                                "height": 214
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/0073e74d/ccf0/41d6/855d/374fdf71e5ed/320x320.jpg",
+                                "width": 320,
+                                "height": 320
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/0073e74d/ccf0/41d6/855d/374fdf71e5ed/480x480.jpg",
+                                "width": 480,
+                                "height": 480
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/0073e74d/ccf0/41d6/855d/374fdf71e5ed/640x428.jpg",
+                                "width": 640,
+                                "height": 428
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/0073e74d/ccf0/41d6/855d/374fdf71e5ed/750x500.jpg",
+                                "width": 750,
+                                "height": 500
+                            },
+                            {
+                                "url": "https://resources.tidal.com/images/0073e74d/ccf0/41d6/855d/374fdf71e5ed/750x750.jpg",
+                                "width": 750,
+                                "height": 750
+                            }
+                        ],
+                        "main": true
+                    }
+                ],
+                "album": {
+                    "id": "251380836",
+                    "title": "RENAISSANCE",
+                    "imageCover": [
+                        {
+                            "url": "https://resources.tidal.com/images/d3c4372b/a652/40e0/bdb1/fc8d032708f6/1080x1080.jpg",
+                            "width": 1080,
+                            "height": 1080
+                        },
+                        {
+                            "url": "https://resources.tidal.com/images/d3c4372b/a652/40e0/bdb1/fc8d032708f6/1280x1280.jpg",
+                            "width": 1280,
+                            "height": 1280
+                        },
+                        {
+                            "url": "https://resources.tidal.com/images/d3c4372b/a652/40e0/bdb1/fc8d032708f6/160x160.jpg",
+                            "width": 160,
+                            "height": 160
+                        },
+                        {
+                            "url": "https://resources.tidal.com/images/d3c4372b/a652/40e0/bdb1/fc8d032708f6/320x320.jpg",
+                            "width": 320,
+                            "height": 320
+                        },
+                        {
+                            "url": "https://resources.tidal.com/images/d3c4372b/a652/40e0/bdb1/fc8d032708f6/640x640.jpg",
+                            "width": 640,
+                            "height": 640
+                        },
+                        {
+                            "url": "https://resources.tidal.com/images/d3c4372b/a652/40e0/bdb1/fc8d032708f6/750x750.jpg",
+                            "width": 750,
+                            "height": 750
+                        },
+                        {
+                            "url": "https://resources.tidal.com/images/d3c4372b/a652/40e0/bdb1/fc8d032708f6/80x80.jpg",
+                            "width": 80,
+                            "height": 80
+                        }
+                    ],
+                    "videoCover": []
+                },
+                "duration": 210,
+                "trackNumber": 2,
+                "volumeNumber": 1,
+                "isrc": "USSM12209516",
+                "copyright": "(P) 2022 Parkwood Entertainment LLC, under exclusive license to Columbia Records, a Division of Sony Music Entertainment",
+                "mediaMetadata": {
+                    "tags": [
+                        "DOLBY_ATMOS"
+                    ]
+                },
+                "properties": {
+                    "content": [
+                        "explicit"
+                    ]
+                },
+                "tidalUrl": "https://tidal.com/browse/track/251380838"
+            },
+            "id": "251380838",
+            "status": 200,
+            "message": "success"
+        }
+    ],
+    "metadata": {
+        "requested": 2,
+        "success": 2,
+        "failure": 0
+    }
+}
