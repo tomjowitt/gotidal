@@ -30,16 +30,29 @@ func main() {
 
 	log.Printf("%s - %s", track.Title, track.Artists[0].Name)
 
+	log.Println("-------------------------------------------------")
+	log.Println("Tracks By ISRC")
+	log.Println("-------------------------------------------------")
+
 	tracks, err := client.GetTracksByISRC(ctx, "GBBLY1600675", gotidal.PaginationParams{Limit: 5})
 	if err != nil {
 		log.Fatal(err)
 	}
 
+	for _, track := range tracks {
+		log.Printf("%s - %s - %s", track.Title, track.Artists[0].Name, track.Album.Title)
+	}
+
 	log.Println("-------------------------------------------------")
-	log.Println("Tracks By ISRC")
+	log.Println("Multiple Tracks")
 	log.Println("-------------------------------------------------")
 
-	for _, track := range tracks {
+	multipleTracks, err := client.GetMultipleTracks(ctx, []string{"251380837", "251380838"})
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	for _, track := range multipleTracks {
 		log.Printf("%s - %s - %s", track.Title, track.Artists[0].Name, track.Album.Title)
 	}
 }

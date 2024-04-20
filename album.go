@@ -79,6 +79,10 @@ type ItemMetaData struct {
 	Total int `json:"total"`
 }
 
+type idListParams struct {
+	ids string
+}
+
 // GetSingleAlbum returns an album that matches an ID.
 func (c *Client) GetSingleAlbum(ctx context.Context, id string) (*Album, error) {
 	if id == "" {
@@ -184,11 +188,7 @@ func (c *Client) GetAlbumByBarcodeID(ctx context.Context, barcodeID string) ([]A
 
 // GetMultipleAlbums returns a list of albums filtered by their IDs.
 func (c *Client) GetMultipleAlbums(ctx context.Context, ids []string) ([]Album, error) {
-	type multiAlbumParams struct {
-		ids string
-	}
-
-	params := multiAlbumParams{
+	params := idListParams{
 		ids: strings.Join(ids, ","),
 	}
 
@@ -285,4 +285,25 @@ func (c *Client) GetTracksByISRC(ctx context.Context, isrc string, params Pagina
 	}
 
 	return result.Data, nil
+}
+
+// GetMultipleTracks returns a list of tracks filtered by their IDs.
+func (c *Client) GetMultipleTracks(ctx context.Context, ids []string) ([]Track, error) {
+	params := idListParams{
+		ids: strings.Join(ids, ","),
+	}
+
+	response, err := c.request(ctx, http.MethodGet, "/tracks", params)
+	if err != nil {
+		return nil, fmt.Errorf("failed to connect to the multiple tracks endpoint: %w", err)
+	}
+
+	var results trackResults
+
+	err = json.Unmarshal(response, &results)
+	if err != nil {
+		return nil, fmt.Errorf("failed to unmarshal the multiple tracks response body: %w", err)
+	}
+
+	return results.Data, nil
 }
