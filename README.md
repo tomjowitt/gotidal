@@ -13,6 +13,7 @@ An unofficial Go library for interacting with the TIDAL API.
 ![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/tomjowitt/gotidal/lint.yml?label=lint)
 ![GitHub go.mod Go version](https://img.shields.io/github/go-mod/go-version/tomjowitt/gotidal)
 ![Codecov](https://img.shields.io/codecov/c/github/tomjowitt/gotidal)
+[![0 dependencies!](https://0dependencies.dev/0dependencies.svg)](https://0dependencies.dev)
 
 ## Guidelines
 
