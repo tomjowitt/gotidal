@@ -96,7 +96,7 @@ func TestGetSingleAlbum(t *testing.T) {
 		t.Run(tt.name, func(t *testing.T) {
 			t.Parallel()
 
-			client := &Client{httpClient: tt.args.httpClient, CountryCode: countryCode}
+			client := &Client{HTTPClient: tt.args.httpClient, CountryCode: countryCode}
 
 			album, err := client.GetSingleAlbum(context.Background(), tt.args.ID)
 			if err == nil && tt.wantErr {
@@ -226,7 +226,7 @@ func TestGetAlbumTracks(t *testing.T) {
 
 			c := &Client{
 				CountryCode: countryCode,
-				httpClient:  tt.args.httpClient,
+				HTTPClient:  tt.args.httpClient,
 			}
 
 			tracks, err := c.GetAlbumTracks(context.Background(), tt.args.id)
@@ -281,7 +281,7 @@ func TestGetSingleTrack(t *testing.T) {
 
 			c := &Client{
 				CountryCode: countryCode,
-				httpClient:  tt.args.httpClient,
+				HTTPClient:  tt.args.httpClient,
 			}
 
 			track, err := c.GetSingleTrack(context.Background(), tt.args.id)
@@ -364,7 +364,7 @@ func TestGetTracksByISRC(t *testing.T) {
 
 			c := &Client{
 				CountryCode: countryCode,
-				httpClient:  tt.args.httpClient,
+				HTTPClient:  tt.args.httpClient,
 			}
 
 			tracks, err := c.GetTracksByISRC(context.Background(), tt.args.id, PaginationParams{Limit: 5})
@@ -444,7 +444,7 @@ func TestGetMultipleTracks(t *testing.T) {
 
 			c := &Client{
 				CountryCode: countryCode,
-				httpClient:  tt.args.httpClient,
+				HTTPClient:  tt.args.httpClient,
 			}
 
 			tracks, err := c.GetMultipleTracks(context.Background(), []string{})

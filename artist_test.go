@@ -47,7 +47,7 @@ func TestGetSingleArtist(t *testing.T) {
 		t.Run(tt.name, func(t *testing.T) {
 			t.Parallel()
 
-			client := &Client{httpClient: tt.args.httpClient}
+			client := &Client{HTTPClient: tt.args.httpClient}
 
 			artist, err := client.GetSingleArtist(context.Background(), tt.args.id)
 			if (err != nil) != tt.wantErr {
@@ -109,7 +109,7 @@ func TestGetAlbumsByArtist(t *testing.T) {
 		t.Run(tt.name, func(t *testing.T) {
 			t.Parallel()
 
-			client := &Client{httpClient: tt.args.httpClient}
+			client := &Client{HTTPClient: tt.args.httpClient}
 
 			albums, err := client.GetAlbumsByArtist(context.Background(), tt.args.id, PaginationParams{Limit: 10})
 			if (err != nil) != tt.wantErr {
@@ -159,7 +159,7 @@ func TestGetMultipleArtists(t *testing.T) {
 		t.Run(tt.name, func(t *testing.T) {
 			t.Parallel()
 
-			client := &Client{httpClient: tt.args.httpClient}
+			client := &Client{HTTPClient: tt.args.httpClient}
 
 			artists, err := client.GetMultipleArtists(context.Background(), tt.args.ids)
 			if (err != nil) != tt.wantErr {
@@ -209,7 +209,7 @@ func TestSimilarArtists(t *testing.T) {
 		t.Run(tt.name, func(t *testing.T) {
 			t.Parallel()
 
-			client := &Client{httpClient: tt.args.httpClient}
+			client := &Client{HTTPClient: tt.args.httpClient}
 
 			artists, err := client.GetSimilarArtists(context.Background(), tt.args.id, PaginationParams{Limit: 10})
 			if (err != nil) != tt.wantErr {

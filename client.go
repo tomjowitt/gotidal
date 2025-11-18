@@ -31,7 +31,7 @@ type HTTPClient interface {
 
 // Client defines the parameters needed to create a TIDAL API client.
 type Client struct {
-	httpClient  HTTPClient
+	HTTPClient  HTTPClient
 	ContentType string
 	Environment string
 	Token       string
@@ -56,7 +56,7 @@ func NewClient(clientID string, clientSecret string, countryCode string) (*Clien
 	}
 
 	return &Client{
-		httpClient:  httpClient,
+		HTTPClient:  httpClient,
 		ContentType: contentType,
 		Environment: environment,
 		Token:       token,
@@ -130,7 +130,7 @@ func (c *Client) request(ctx context.Context, method string, path string, params
 	req.Header.Set("Authorization", concat("Bearer ", c.Token))
 	req.Header.Set("accept", c.ContentType)
 
-	return processRequest(c.httpClient, req)
+	return processRequest(c.HTTPClient, req)
 }
 
 func toURLParams(input interface{}, countryCode string) string {
